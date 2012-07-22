@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E2705" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="media" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toeic" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Toeic" inverseName="questions" inverseEntity="Toeic" syncable="YES"/>
+    </entity>
+    <entity name="Toeic" representedClassName="Toeic" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="questions" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="toeic" inverseEntity="Question" syncable="YES"/>
+        <relationship name="users" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="toeic" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toeic" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Toeic" inverseName="users" inverseEntity="Toeic" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Users" positionX="-2628" positionY="-585" width="128" height="120"/>
+        <element name="Toeic" positionX="-2367" positionY="-594" width="128" height="90"/>
+        <element name="Question" positionX="-2043" positionY="-510" width="128" height="120"/>
+    </elements>
+</model>
