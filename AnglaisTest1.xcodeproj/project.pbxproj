@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0402F66015BC92D90006E198 /* logo_epitech_blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402F65F15BC92D90006E198 /* logo_epitech_blanc.png */; };
+		042DBDE115BC4A2E00738FDA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 042DBDE015BC4A2E00738FDA /* README.md */; };
 		04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3215B583AA00711079 /* GeneralConditionsViewController.m */; };
 		04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */; };
 		04422E3F15B5976600711079 /* Tests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3D15B5976600711079 /* Tests.xcdatamodeld */; };
@@ -14,7 +16,6 @@
 		04422E4615B5A17D00711079 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E4515B5A17D00711079 /* Question.m */; };
 		04422E4915B5A17D00711079 /* Toeic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E4815B5A17D00711079 /* Toeic.m */; };
 		04BDE4FF15B56F3F0075F0C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */; };
-		04D4C7D215BC43530011759E /* README in Resources */ = {isa = PBXBuildFile; fileRef = 04D4C7D115BC43530011759E /* README */; };
 		04D6F79215B460DA000F1A1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79115B460DA000F1A1F /* UIKit.framework */; };
 		04D6F79415B460DA000F1A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79315B460DA000F1A1F /* Foundation.framework */; };
 		04D6F79615B460DA000F1A1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79515B460DA000F1A1F /* CoreGraphics.framework */; };
@@ -22,10 +23,11 @@
 		04D6F79E15B460DA000F1A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F79D15B460DA000F1A1F /* main.m */; };
 		04D6F7A215B460DA000F1A1F /* EnglishTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F7A115B460DA000F1A1F /* EnglishTestAppDelegate.m */; };
 		04D6F7A815B460DA000F1A1F /* EnglishTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */; };
-		04D6F7AF15B46142000F1A1F /* logo_epitech_blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D6F7AE15B46142000F1A1F /* logo_epitech_blanc.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0402F65F15BC92D90006E198 /* logo_epitech_blanc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_epitech_blanc.png; path = Assets/logo_epitech_blanc.png; sourceTree = "<group>"; };
+		042DBDE015BC4A2E00738FDA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		04422E3115B583AA00711079 /* GeneralConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralConditionsViewController.h; sourceTree = "<group>"; };
 		04422E3215B583AA00711079 /* GeneralConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralConditionsViewController.m; sourceTree = "<group>"; };
 		04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -37,7 +39,6 @@
 		04422E4715B5A17D00711079 /* Toeic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toeic.h; sourceTree = "<group>"; };
 		04422E4815B5A17D00711079 /* Toeic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toeic.m; sourceTree = "<group>"; };
 		04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		04D4C7D115BC43530011759E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		04D6F78D15B460DA000F1A1F /* AnglaisTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnglaisTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D6F79115B460DA000F1A1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04D6F79315B460DA000F1A1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,7 +51,6 @@
 		04D6F7A115B460DA000F1A1F /* EnglishTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishTestAppDelegate.m; sourceTree = "<group>"; };
 		04D6F7A615B460DA000F1A1F /* EnglishTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnglishTestViewController.h; sourceTree = "<group>"; };
 		04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishTestViewController.m; sourceTree = "<group>"; };
-		04D6F7AE15B46142000F1A1F /* logo_epitech_blanc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_epitech_blanc.png; path = ../../Downloads/logo_epitech_blanc.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 		049A566B15B5735400A1F6E9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				04D6F7AE15B46142000F1A1F /* logo_epitech_blanc.png */,
+				0402F65F15BC92D90006E198 /* logo_epitech_blanc.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -93,7 +93,7 @@
 		04D6F78215B460DA000F1A1F = {
 			isa = PBXGroup;
 			children = (
-				04D4C7D115BC43530011759E /* README */,
+				042DBDE015BC4A2E00738FDA /* README.md */,
 				049A566B15B5735400A1F6E9 /* Assets */,
 				04D6F79715B460DA000F1A1F /* AnglaisTest1 */,
 				04D6F79015B460DA000F1A1F /* Frameworks */,
@@ -200,9 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D6F79C15B460DA000F1A1F /* InfoPlist.strings in Resources */,
-				04D6F7AF15B46142000F1A1F /* logo_epitech_blanc.png in Resources */,
 				04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */,
-				04D4C7D215BC43530011759E /* README in Resources */,
+				042DBDE115BC4A2E00738FDA /* README.md in Resources */,
+				0402F66015BC92D90006E198 /* logo_epitech_blanc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
