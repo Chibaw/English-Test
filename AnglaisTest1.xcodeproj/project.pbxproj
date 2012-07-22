@@ -14,6 +14,7 @@
 		04422E4615B5A17D00711079 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E4515B5A17D00711079 /* Question.m */; };
 		04422E4915B5A17D00711079 /* Toeic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E4815B5A17D00711079 /* Toeic.m */; };
 		04BDE4FF15B56F3F0075F0C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */; };
+		04D4C7D215BC43530011759E /* README in Resources */ = {isa = PBXBuildFile; fileRef = 04D4C7D115BC43530011759E /* README */; };
 		04D6F79215B460DA000F1A1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79115B460DA000F1A1F /* UIKit.framework */; };
 		04D6F79415B460DA000F1A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79315B460DA000F1A1F /* Foundation.framework */; };
 		04D6F79615B460DA000F1A1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79515B460DA000F1A1F /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 		04422E4715B5A17D00711079 /* Toeic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toeic.h; sourceTree = "<group>"; };
 		04422E4815B5A17D00711079 /* Toeic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toeic.m; sourceTree = "<group>"; };
 		04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		04D4C7D115BC43530011759E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		04D6F78D15B460DA000F1A1F /* AnglaisTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnglaisTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D6F79115B460DA000F1A1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04D6F79315B460DA000F1A1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +93,7 @@
 		04D6F78215B460DA000F1A1F = {
 			isa = PBXGroup;
 			children = (
+				04D4C7D115BC43530011759E /* README */,
 				049A566B15B5735400A1F6E9 /* Assets */,
 				04D6F79715B460DA000F1A1F /* AnglaisTest1 */,
 				04D6F79015B460DA000F1A1F /* Frameworks */,
@@ -199,6 +202,7 @@
 				04D6F79C15B460DA000F1A1F /* InfoPlist.strings in Resources */,
 				04D6F7AF15B46142000F1A1F /* logo_epitech_blanc.png in Resources */,
 				04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */,
+				04D4C7D215BC43530011759E /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
