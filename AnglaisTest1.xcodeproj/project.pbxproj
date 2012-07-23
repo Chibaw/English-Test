@@ -12,6 +12,12 @@
 		04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3215B583AA00711079 /* GeneralConditionsViewController.m */; };
 		04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */; };
 		04909EE615BD712B00D174C5 /* Phase1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04909EE515BD712B00D174C5 /* Phase1ViewController.m */; };
+		0493F33115BDA7FC00A6CA86 /* ModifyToeicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33015BDA7FC00A6CA86 /* ModifyToeicCell.m */; };
+		0493F33615BDB99000A6CA86 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33515BDB99000A6CA86 /* ResultsViewController.m */; };
+		0493F33915BDB9CE00A6CA86 /* ResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33815BDB9CE00A6CA86 /* ResultsCell.m */; };
+		0493F33C15BDC27B00A6CA86 /* AdminUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33B15BDC27B00A6CA86 /* AdminUsersViewController.m */; };
+		0493F33F15BDC29100A6CA86 /* AdminUsersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33E15BDC29100A6CA86 /* AdminUsersCell.m */; };
+		04A7132615BD81A80017CC1C /* ModifyToeicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7132515BD81A80017CC1C /* ModifyToeicViewController.m */; };
 		04D6F79215B460DA000F1A1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79115B460DA000F1A1F /* UIKit.framework */; };
 		04D6F79415B460DA000F1A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79315B460DA000F1A1F /* Foundation.framework */; };
 		04D6F79615B460DA000F1A1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79515B460DA000F1A1F /* CoreGraphics.framework */; };
@@ -29,6 +35,18 @@
 		04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		04909EE415BD712B00D174C5 /* Phase1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phase1ViewController.h; sourceTree = "<group>"; };
 		04909EE515BD712B00D174C5 /* Phase1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phase1ViewController.m; sourceTree = "<group>"; };
+		0493F32F15BDA7FC00A6CA86 /* ModifyToeicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyToeicCell.h; sourceTree = "<group>"; };
+		0493F33015BDA7FC00A6CA86 /* ModifyToeicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyToeicCell.m; sourceTree = "<group>"; };
+		0493F33415BDB99000A6CA86 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		0493F33515BDB99000A6CA86 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		0493F33715BDB9CE00A6CA86 /* ResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsCell.h; sourceTree = "<group>"; };
+		0493F33815BDB9CE00A6CA86 /* ResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsCell.m; sourceTree = "<group>"; };
+		0493F33A15BDC27B00A6CA86 /* AdminUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminUsersViewController.h; sourceTree = "<group>"; };
+		0493F33B15BDC27B00A6CA86 /* AdminUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminUsersViewController.m; sourceTree = "<group>"; };
+		0493F33D15BDC29100A6CA86 /* AdminUsersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminUsersCell.h; sourceTree = "<group>"; };
+		0493F33E15BDC29100A6CA86 /* AdminUsersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminUsersCell.m; sourceTree = "<group>"; };
+		04A7132415BD81A80017CC1C /* ModifyToeicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyToeicViewController.h; sourceTree = "<group>"; };
+		04A7132515BD81A80017CC1C /* ModifyToeicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyToeicViewController.m; sourceTree = "<group>"; };
 		04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		04D6F78D15B460DA000F1A1F /* AnglaisTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnglaisTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D6F79115B460DA000F1A1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -66,6 +84,25 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		04A7132215BD81860017CC1C /* administration */ = {
+			isa = PBXGroup;
+			children = (
+				04A7132415BD81A80017CC1C /* ModifyToeicViewController.h */,
+				04A7132515BD81A80017CC1C /* ModifyToeicViewController.m */,
+				0493F32F15BDA7FC00A6CA86 /* ModifyToeicCell.h */,
+				0493F33015BDA7FC00A6CA86 /* ModifyToeicCell.m */,
+				0493F33415BDB99000A6CA86 /* ResultsViewController.h */,
+				0493F33515BDB99000A6CA86 /* ResultsViewController.m */,
+				0493F33715BDB9CE00A6CA86 /* ResultsCell.h */,
+				0493F33815BDB9CE00A6CA86 /* ResultsCell.m */,
+				0493F33A15BDC27B00A6CA86 /* AdminUsersViewController.h */,
+				0493F33B15BDC27B00A6CA86 /* AdminUsersViewController.m */,
+				0493F33D15BDC29100A6CA86 /* AdminUsersCell.h */,
+				0493F33E15BDC29100A6CA86 /* AdminUsersCell.m */,
+			);
+			name = administration;
+			sourceTree = "<group>";
+		};
 		04D6F78215B460DA000F1A1F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +136,7 @@
 		04D6F79715B460DA000F1A1F /* AnglaisTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				04A7132215BD81860017CC1C /* administration */,
 				04D6F79815B460DA000F1A1F /* Supporting Files */,
 				04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */,
 				04D6F7A015B460DA000F1A1F /* EnglishTestAppDelegate.h */,
@@ -195,6 +233,12 @@
 				04D6F7A815B460DA000F1A1F /* EnglishTestViewController.m in Sources */,
 				04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */,
 				04909EE615BD712B00D174C5 /* Phase1ViewController.m in Sources */,
+				04A7132615BD81A80017CC1C /* ModifyToeicViewController.m in Sources */,
+				0493F33115BDA7FC00A6CA86 /* ModifyToeicCell.m in Sources */,
+				0493F33615BDB99000A6CA86 /* ResultsViewController.m in Sources */,
+				0493F33915BDB9CE00A6CA86 /* ResultsCell.m in Sources */,
+				0493F33C15BDC27B00A6CA86 /* AdminUsersViewController.m in Sources */,
+				0493F33F15BDC29100A6CA86 /* AdminUsersCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
