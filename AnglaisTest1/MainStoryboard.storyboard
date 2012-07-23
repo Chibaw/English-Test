@@ -140,11 +140,11 @@
             </objects>
             <point key="canvasLocation" x="1225" y="-2182"/>
         </scene>
-        <!--View Controller-->
+        <!--Phase1 View Controller-->
         <scene sceneID="bQU-qt-O7v">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcO-tg-fUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="R3v-JC-5IF" sceneMemberID="viewController">
+                <viewController id="R3v-JC-5IF" customClass="Phase1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iKj-ni-J0K">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -173,6 +173,27 @@
     <resources>
         <image name="logo_epitech_blanc.png" width="2362" height="859"/>
     </resources>
+    <classes>
+        <class className="EnglishTestViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EnglishTestViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonStart:"/>
+                <relationship kind="outlet" name="textFieldFirstName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldLastName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldMail" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="GeneralConditionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneralConditionsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startToeic:"/>
+                <relationship kind="outlet" name="validationChecker" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="Phase1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Phase1ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

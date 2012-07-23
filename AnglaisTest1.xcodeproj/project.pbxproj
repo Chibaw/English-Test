@@ -11,11 +11,7 @@
 		042DBDE115BC4A2E00738FDA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 042DBDE015BC4A2E00738FDA /* README.md */; };
 		04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3215B583AA00711079 /* GeneralConditionsViewController.m */; };
 		04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */; };
-		04422E3F15B5976600711079 /* Tests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3D15B5976600711079 /* Tests.xcdatamodeld */; };
-		04422E4315B5A17D00711079 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E4215B5A17D00711079 /* Users.m */; };
-		04422E4615B5A17D00711079 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E4515B5A17D00711079 /* Question.m */; };
-		04422E4915B5A17D00711079 /* Toeic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E4815B5A17D00711079 /* Toeic.m */; };
-		04BDE4FF15B56F3F0075F0C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */; };
+		04909EE615BD712B00D174C5 /* Phase1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04909EE515BD712B00D174C5 /* Phase1ViewController.m */; };
 		04D6F79215B460DA000F1A1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79115B460DA000F1A1F /* UIKit.framework */; };
 		04D6F79415B460DA000F1A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79315B460DA000F1A1F /* Foundation.framework */; };
 		04D6F79615B460DA000F1A1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79515B460DA000F1A1F /* CoreGraphics.framework */; };
@@ -31,13 +27,8 @@
 		04422E3115B583AA00711079 /* GeneralConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralConditionsViewController.h; sourceTree = "<group>"; };
 		04422E3215B583AA00711079 /* GeneralConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralConditionsViewController.m; sourceTree = "<group>"; };
 		04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		04422E3E15B5976600711079 /* Tests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tests.xcdatamodel; sourceTree = "<group>"; };
-		04422E4115B5A17D00711079 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
-		04422E4215B5A17D00711079 /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
-		04422E4415B5A17D00711079 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
-		04422E4515B5A17D00711079 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
-		04422E4715B5A17D00711079 /* Toeic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toeic.h; sourceTree = "<group>"; };
-		04422E4815B5A17D00711079 /* Toeic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toeic.m; sourceTree = "<group>"; };
+		04909EE415BD712B00D174C5 /* Phase1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phase1ViewController.h; sourceTree = "<group>"; };
+		04909EE515BD712B00D174C5 /* Phase1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phase1ViewController.m; sourceTree = "<group>"; };
 		04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		04D6F78D15B460DA000F1A1F /* AnglaisTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnglaisTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D6F79115B460DA000F1A1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -61,27 +52,12 @@
 				04D6F79215B460DA000F1A1F /* UIKit.framework in Frameworks */,
 				04D6F79415B460DA000F1A1F /* Foundation.framework in Frameworks */,
 				04D6F79615B460DA000F1A1F /* CoreGraphics.framework in Frameworks */,
-				04BDE4FF15B56F3F0075F0C5 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04422E4015B5A14200711079 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				04422E3D15B5976600711079 /* Tests.xcdatamodeld */,
-				04422E4715B5A17D00711079 /* Toeic.h */,
-				04422E4815B5A17D00711079 /* Toeic.m */,
-				04422E4415B5A17D00711079 /* Question.h */,
-				04422E4515B5A17D00711079 /* Question.m */,
-				04422E4115B5A17D00711079 /* Users.h */,
-				04422E4215B5A17D00711079 /* Users.m */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
 		049A566B15B5735400A1F6E9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +99,6 @@
 		04D6F79715B460DA000F1A1F /* AnglaisTest1 */ = {
 			isa = PBXGroup;
 			children = (
-				04422E4015B5A14200711079 /* CoreData */,
 				04D6F79815B460DA000F1A1F /* Supporting Files */,
 				04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */,
 				04D6F7A015B460DA000F1A1F /* EnglishTestAppDelegate.h */,
@@ -132,6 +107,8 @@
 				04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */,
 				04422E3115B583AA00711079 /* GeneralConditionsViewController.h */,
 				04422E3215B583AA00711079 /* GeneralConditionsViewController.m */,
+				04909EE415BD712B00D174C5 /* Phase1ViewController.h */,
+				04909EE515BD712B00D174C5 /* Phase1ViewController.m */,
 			);
 			path = AnglaisTest1;
 			sourceTree = "<group>";
@@ -217,10 +194,7 @@
 				04D6F7A215B460DA000F1A1F /* EnglishTestAppDelegate.m in Sources */,
 				04D6F7A815B460DA000F1A1F /* EnglishTestViewController.m in Sources */,
 				04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */,
-				04422E3F15B5976600711079 /* Tests.xcdatamodeld in Sources */,
-				04422E4315B5A17D00711079 /* Users.m in Sources */,
-				04422E4615B5A17D00711079 /* Question.m in Sources */,
-				04422E4915B5A17D00711079 /* Toeic.m in Sources */,
+				04909EE615BD712B00D174C5 /* Phase1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,19 +303,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		04422E3D15B5976600711079 /* Tests.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				04422E3E15B5976600711079 /* Tests.xcdatamodel */,
-			);
-			currentVersion = 04422E3E15B5976600711079 /* Tests.xcdatamodel */;
-			path = Tests.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 04D6F78415B460DA000F1A1F /* Project object */;
 }
