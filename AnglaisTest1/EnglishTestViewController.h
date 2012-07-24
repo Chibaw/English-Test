@@ -15,5 +15,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFirstName;
 - (IBAction)buttonStart:(id)sender;
 - (BOOL)ValidationSuccessful;
-
+- (BOOL)isAdminInUserDatabase;
 @end

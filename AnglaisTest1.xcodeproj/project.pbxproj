@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0402F66015BC92D90006E198 /* logo_epitech_blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402F65F15BC92D90006E198 /* logo_epitech_blanc.png */; };
-		042DBDE115BC4A2E00738FDA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 042DBDE015BC4A2E00738FDA /* README.md */; };
 		04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3215B583AA00711079 /* GeneralConditionsViewController.m */; };
 		04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */; };
 		04909EE615BD712B00D174C5 /* Phase1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04909EE515BD712B00D174C5 /* Phase1ViewController.m */; };
@@ -17,6 +16,7 @@
 		0493F33915BDB9CE00A6CA86 /* ResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33815BDB9CE00A6CA86 /* ResultsCell.m */; };
 		0493F33C15BDC27B00A6CA86 /* AdminUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33B15BDC27B00A6CA86 /* AdminUsersViewController.m */; };
 		0493F33F15BDC29100A6CA86 /* AdminUsersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33E15BDC29100A6CA86 /* AdminUsersCell.m */; };
+		0493F34315BDD8F800A6CA86 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0493F34215BDD8F800A6CA86 /* users.plist */; };
 		04A7132615BD81A80017CC1C /* ModifyToeicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7132515BD81A80017CC1C /* ModifyToeicViewController.m */; };
 		04D6F79215B460DA000F1A1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79115B460DA000F1A1F /* UIKit.framework */; };
 		04D6F79415B460DA000F1A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6F79315B460DA000F1A1F /* Foundation.framework */; };
@@ -45,6 +45,7 @@
 		0493F33B15BDC27B00A6CA86 /* AdminUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminUsersViewController.m; sourceTree = "<group>"; };
 		0493F33D15BDC29100A6CA86 /* AdminUsersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminUsersCell.h; sourceTree = "<group>"; };
 		0493F33E15BDC29100A6CA86 /* AdminUsersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminUsersCell.m; sourceTree = "<group>"; };
+		0493F34215BDD8F800A6CA86 /* users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
 		04A7132415BD81A80017CC1C /* ModifyToeicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyToeicViewController.h; sourceTree = "<group>"; };
 		04A7132515BD81A80017CC1C /* ModifyToeicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyToeicViewController.m; sourceTree = "<group>"; };
 		04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -80,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				0402F65F15BC92D90006E198 /* logo_epitech_blanc.png */,
+				0493F34215BDD8F800A6CA86 /* users.plist */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -216,8 +218,8 @@
 			files = (
 				04D6F79C15B460DA000F1A1F /* InfoPlist.strings in Resources */,
 				04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */,
-				042DBDE115BC4A2E00738FDA /* README.md in Resources */,
 				0402F66015BC92D90006E198 /* logo_epitech_blanc.png in Resources */,
+				0493F34315BDD8F800A6CA86 /* users.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

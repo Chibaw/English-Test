@@ -58,9 +58,31 @@
     return FALSE;
 }
 
+- (BOOL)isAdminInUserDatabase {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"users" ofType:@"plist"];
+
+    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSArray *array = [NSArray alloc];
+    array = [dic objectForKey:@"Users"];
+
+    NSUInteger count = [array count];
+    for (NSUInteger index = 0; index < count; index++)
+    {  
+        if ([[[array objectAtIndex: index] objectForKey: @"lastName"] isEqualToString: self.textFieldLastName.text]
+            && [[[array objectAtIndex: index] objectForKey: @"firstName"] isEqualToString: self.textFieldFirstName.text]
+            && [[[array objectAtIndex: index] objectForKey: @"mail"] isEqualToString: self.textFieldMail.text])
+        {
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+
 - (IBAction)buttonStart:(id)sender {
+    
     if ([self ValidationSuccessful] == YES) {
-        if (![self.textFieldLastName.text compare:@"Fraisse"]) {
+        if ([self isAdminInUserDatabase]) {
             [self performSegueWithIdentifier:@"ValidationSucceededAdmin" sender:self];            
         } else {
             [self performSegueWithIdentifier:@"ValidationSucceeded" sender:self];
