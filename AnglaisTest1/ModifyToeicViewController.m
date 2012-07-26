@@ -15,6 +15,7 @@
 @end
 
 @implementation ModifyToeicViewController
+@synthesize array;
 @synthesize questionNumbers = _questionNumbers;
 @synthesize questionTexts = _questionTexts;
 @synthesize questionAnswers = _questionAnswers;
@@ -32,6 +33,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"users" ofType:@"plist"];
+//    
+//    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
+//    self.array = [NSArray alloc];
+//    self.array = [dic objectForKey:@"QuestionsAndAnswers"];
+//    
+//    NSUInteger count = [self.array count];
+//    for (NSUInteger index = 0; index < count; index++)
+//    {  
+//        [[self.array objectAtIndex: index] objectForKey: @"lastName"];
+//        [[self.array objectAtIndex: index] objectForKey: @"firstName"];
+//        [[self.array objectAtIndex: index] objectForKey: @"mail"];
+//    }
+    
     self.questionNumbers = [[NSArray alloc]
                             initWithObjects:
                             @"1",

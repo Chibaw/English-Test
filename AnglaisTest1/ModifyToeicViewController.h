@@ -14,4 +14,5 @@
 @property (nonatomic, strong) NSArray *questionNumbers;
 @property (nonatomic, strong) NSArray *questionTexts;
 @property (nonatomic, strong) NSArray *questionAnswers;
+@property (nonatomic, strong) NSArray *array;
 @end
