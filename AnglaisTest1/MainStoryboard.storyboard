@@ -336,16 +336,16 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzP-ZW-ddX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="fnt-g7-lxV" customClass="ModifyToeicViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="147" sectionHeaderHeight="22" sectionFooterHeight="22" id="yQo-4M-n5H">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="169" sectionHeaderHeight="22" sectionFooterHeight="22" id="yQo-4M-n5H">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="modifyToeicCell" rowHeight="147" id="bHk-nM-77d" customClass="ModifyToeicCell">
-                                <rect key="frame" x="0.0" y="22" width="768" height="147"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="modifyToeicCell" rowHeight="169" id="bHk-nM-77d" customClass="ModifyToeicCell">
+                                <rect key="frame" x="0.0" y="22" width="768" height="169"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="146"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="168"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ue0-zJ-tVj">
