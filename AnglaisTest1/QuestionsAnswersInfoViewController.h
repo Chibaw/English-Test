@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Phase1ViewController : UIViewController
-
+@interface QuestionsAnswersInfoViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISwitch *validationChecker;
+- (IBAction)nextQuestions:(id)sender;
 @end

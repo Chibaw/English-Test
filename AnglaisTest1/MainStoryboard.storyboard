@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E2705" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="aD4-q1-tib">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="R3v-JC-5IF">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -141,19 +141,122 @@
             </objects>
             <point key="canvasLocation" x="2199" y="-2182"/>
         </scene>
-        <!--Phase1 View Controller-->
+        <!--Questions Answers Info View Controller-->
         <scene sceneID="bQU-qt-O7v">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcO-tg-fUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="R3v-JC-5IF" customClass="Phase1ViewController" sceneMemberID="viewController">
+                <viewController id="R3v-JC-5IF" customClass="QuestionsAnswersInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iKj-ni-J0K">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="k7b-Iq-ivE">
+                                <rect key="frame" x="183" y="508" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JX6-Cy-J7F">
+                                <rect key="frame" x="442" y="508" width="143" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next questions">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestions:" destination="R3v-JC-5IF" eventType="touchUpInside" id="5ey-mj-GRT"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="GbU-2I-Esp">
+                                <rect key="frame" x="183" y="276" width="402" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="validationChecker" destination="k7b-Iq-ivE" id="fWy-ay-8kC"/>
+                        <segue destination="QkC-Jw-aXn" kind="modal" identifier="QuestionsAnswers" id="0RP-Pj-oWC"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="3077" y="-2182"/>
+        </scene>
+        <!--Questions Answers View Controller-->
+        <scene sceneID="2Sb-vK-JvV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3u-J1-gHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="QkC-Jw-aXn" customClass="QuestionsAnswersViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qe2-M6-65P">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A- Noob" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="Zj0-US-Cys">
+                                <rect key="frame" x="20" y="110" width="728" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="B- Casu" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="7Hg-KL-gWo">
+                                <rect key="frame" x="20" y="168" width="728" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="C- Peon" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="tmV-ed-oLW">
+                                <rect key="frame" x="20" y="227" width="728" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Wpi-fL-nRx">
+                                <rect key="frame" x="281" y="303" width="207" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2s9-fF-Uk9">
+                                <rect key="frame" x="310" y="370" width="148" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next question">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="QkC-Jw-aXn" eventType="touchUpInside" id="JzR-Hf-cTT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Questions &amp; Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="5E6-UR-je2">
+                                <rect key="frame" x="235" y="39" width="299" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerA" destination="Zj0-US-Cys" id="qpw-bU-tjD"/>
+                        <outlet property="answerB" destination="7Hg-KL-gWo" id="PFp-IM-fxe"/>
+                        <outlet property="answerC" destination="tmV-ed-oLW" id="f9K-yR-AuD"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4013" y="-2182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PPG-aM-kHR">
@@ -427,60 +530,6 @@
     <resources>
         <image name="logo_epitech_blanc.png" width="2362" height="859"/>
     </resources>
-    <classes>
-        <class className="AdminUsersCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AdminUsersCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="userFirstName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="userLastName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="userMail" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="AdminUsersViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AdminUsersViewController.h"/>
-        </class>
-        <class className="EnglishTestViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EnglishTestViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonStart:"/>
-                <relationship kind="outlet" name="textFieldFirstName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textFieldLastName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textFieldMail" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="GeneralConditionsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneralConditionsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startToeic:"/>
-                <relationship kind="outlet" name="validationChecker" candidateClass="UISwitch"/>
-            </relationships>
-        </class>
-        <class className="ModifyToeicCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ModifyToeicCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="questionAnswer" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="questionNumber" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="questionText" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ModifyToeicViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ModifyToeicViewController.h"/>
-        </class>
-        <class className="Phase1ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Phase1ViewController.h"/>
-        </class>
-        <class className="ResultsCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultsCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="resultFirstName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resultGrade" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resultLastName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ResultsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultsViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

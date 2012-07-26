@@ -10,7 +10,7 @@
 		0402F66015BC92D90006E198 /* logo_epitech_blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402F65F15BC92D90006E198 /* logo_epitech_blanc.png */; };
 		04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3215B583AA00711079 /* GeneralConditionsViewController.m */; };
 		04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */; };
-		04909EE615BD712B00D174C5 /* Phase1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04909EE515BD712B00D174C5 /* Phase1ViewController.m */; };
+		04909EE615BD712B00D174C5 /* QuestionsAnswersInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04909EE515BD712B00D174C5 /* QuestionsAnswersInfoViewController.m */; };
 		0493F33115BDA7FC00A6CA86 /* ModifyToeicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33015BDA7FC00A6CA86 /* ModifyToeicCell.m */; };
 		0493F33615BDB99000A6CA86 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33515BDB99000A6CA86 /* ResultsViewController.m */; };
 		0493F33915BDB9CE00A6CA86 /* ResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493F33815BDB9CE00A6CA86 /* ResultsCell.m */; };
@@ -25,6 +25,8 @@
 		04D6F79E15B460DA000F1A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F79D15B460DA000F1A1F /* main.m */; };
 		04D6F7A215B460DA000F1A1F /* EnglishTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F7A115B460DA000F1A1F /* EnglishTestAppDelegate.m */; };
 		04D6F7A815B460DA000F1A1F /* EnglishTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */; };
+		42AF96ED15BEFD3A00587D05 /* questions_and_answers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AF96EC15BEFD3A00587D05 /* questions_and_answers.plist */; };
+		42AF96F015BF0D8000587D05 /* QuestionsAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AF96EF15BF0D8000587D05 /* QuestionsAnswersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +35,8 @@
 		04422E3115B583AA00711079 /* GeneralConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralConditionsViewController.h; sourceTree = "<group>"; };
 		04422E3215B583AA00711079 /* GeneralConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralConditionsViewController.m; sourceTree = "<group>"; };
 		04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		04909EE415BD712B00D174C5 /* Phase1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phase1ViewController.h; sourceTree = "<group>"; };
-		04909EE515BD712B00D174C5 /* Phase1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phase1ViewController.m; sourceTree = "<group>"; };
+		04909EE415BD712B00D174C5 /* QuestionsAnswersInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsAnswersInfoViewController.h; sourceTree = "<group>"; };
+		04909EE515BD712B00D174C5 /* QuestionsAnswersInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsAnswersInfoViewController.m; sourceTree = "<group>"; };
 		0493F32F15BDA7FC00A6CA86 /* ModifyToeicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyToeicCell.h; sourceTree = "<group>"; };
 		0493F33015BDA7FC00A6CA86 /* ModifyToeicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyToeicCell.m; sourceTree = "<group>"; };
 		0493F33415BDB99000A6CA86 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
@@ -61,6 +63,9 @@
 		04D6F7A115B460DA000F1A1F /* EnglishTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishTestAppDelegate.m; sourceTree = "<group>"; };
 		04D6F7A615B460DA000F1A1F /* EnglishTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnglishTestViewController.h; sourceTree = "<group>"; };
 		04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishTestViewController.m; sourceTree = "<group>"; };
+		42AF96EC15BEFD3A00587D05 /* questions_and_answers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions_and_answers.plist; sourceTree = "<group>"; };
+		42AF96EE15BF0D8000587D05 /* QuestionsAnswersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsAnswersViewController.h; sourceTree = "<group>"; };
+		42AF96EF15BF0D8000587D05 /* QuestionsAnswersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsAnswersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 			children = (
 				0402F65F15BC92D90006E198 /* logo_epitech_blanc.png */,
 				0493F34215BDD8F800A6CA86 /* users.plist */,
+				42AF96EC15BEFD3A00587D05 /* questions_and_answers.plist */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -147,8 +153,10 @@
 				04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */,
 				04422E3115B583AA00711079 /* GeneralConditionsViewController.h */,
 				04422E3215B583AA00711079 /* GeneralConditionsViewController.m */,
-				04909EE415BD712B00D174C5 /* Phase1ViewController.h */,
-				04909EE515BD712B00D174C5 /* Phase1ViewController.m */,
+				42AF96EE15BF0D8000587D05 /* QuestionsAnswersViewController.h */,
+				42AF96EF15BF0D8000587D05 /* QuestionsAnswersViewController.m */,
+				04909EE415BD712B00D174C5 /* QuestionsAnswersInfoViewController.h */,
+				04909EE515BD712B00D174C5 /* QuestionsAnswersInfoViewController.m */,
 			);
 			path = AnglaisTest1;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */,
 				0402F66015BC92D90006E198 /* logo_epitech_blanc.png in Resources */,
 				0493F34315BDD8F800A6CA86 /* users.plist in Resources */,
+				42AF96ED15BEFD3A00587D05 /* questions_and_answers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,13 +243,14 @@
 				04D6F7A215B460DA000F1A1F /* EnglishTestAppDelegate.m in Sources */,
 				04D6F7A815B460DA000F1A1F /* EnglishTestViewController.m in Sources */,
 				04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */,
-				04909EE615BD712B00D174C5 /* Phase1ViewController.m in Sources */,
+				04909EE615BD712B00D174C5 /* QuestionsAnswersInfoViewController.m in Sources */,
 				04A7132615BD81A80017CC1C /* ModifyToeicViewController.m in Sources */,
 				0493F33115BDA7FC00A6CA86 /* ModifyToeicCell.m in Sources */,
 				0493F33615BDB99000A6CA86 /* ResultsViewController.m in Sources */,
 				0493F33915BDB9CE00A6CA86 /* ResultsCell.m in Sources */,
 				0493F33C15BDC27B00A6CA86 /* AdminUsersViewController.m in Sources */,
 				0493F33F15BDC29100A6CA86 /* AdminUsersCell.m in Sources */,
+				42AF96F015BF0D8000587D05 /* QuestionsAnswersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

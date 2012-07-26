@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QuestionsAndAnswers</key>
+	<array>
+		<dict>
+			<key>validAnswer</key>
+			<string>B</string>
+			<key>A</key>
+			<string>rep a</string>
+			<key>B</key>
+			<string>rep b</string>
+			<key>C</key>
+			<string>rep c</string>
+			<key>Sound</key>
+			<string>un son</string>
+		</dict>
+		<dict>
+			<key>validAnswer</key>
+			<string>C</string>
+			<key>A</key>
+			<string>answer a</string>
+			<key>B</key>
+			<string>answer b</string>
+			<key>C</key>
+			<string>answer c</string>
+			<key>Sound</key>
+			<string>the sound :)</string>
+		</dict>
+		<dict>
+			<key>validAnswer</key>
+			<string>A</string>
+			<key>A</key>
+			<string>the answer A</string>
+			<key>C</key>
+			<string>the answer C</string>
+			<key>B</key>
+			<string>the answer B</string>
+			<key>Sound</key>
+			<string>path to load a sound</string>
+		</dict>
+	</array>
+</dict>
+</plist>
