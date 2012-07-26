@@ -193,7 +193,7 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>Directions: You will hear a question and three possible answers. Choose the answer that most closely answers the question and fill in the corresponding oval on your answer form.</string>
 				<key>A</key>
 				<string></string>
 				<key>B</key>
@@ -209,417 +209,271 @@
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q0.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Where do you live?</string>
 				<key>A</key>
-				<string></string>
+				<string>About five o&apos;clock.</string>
 				<key>B</key>
-				<string></string>
+				<string>On Third Avenue.</string>
 				<key>C</key>
-				<string></string>
+				<string>In ten minutes.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q1.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Why are you late?</string>
 				<key>A</key>
-				<string></string>
+				<string>My watch stopped.</string>
 				<key>B</key>
-				<string></string>
+				<string>I ate already.</string>
 				<key>C</key>
-				<string></string>
+				<string>I&apos;ll call you later.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q2.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Who are you waiting for?</string>
 				<key>A</key>
-				<string></string>
+				<string>I&apos;ve lost a lot of weight.</string>
 				<key>B</key>
-				<string></string>
+				<string>I don&apos;t know the way.</string>
 				<key>C</key>
-				<string></string>
+				<string>My wife; she is meeting me here.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q3.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>What are you going to do now?</string>
 				<key>A</key>
-				<string></string>
+				<string>I went home early.</string>
 				<key>B</key>
-				<string></string>
+				<string>I didn&apos;t do anything then.</string>
 				<key>C</key>
-				<string></string>
+				<string>I plan to take a vacation.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q4.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Which chair is yours?</string>
 				<key>A</key>
-				<string></string>
+				<string>Mine is the one on the left.</string>
 				<key>B</key>
-				<string></string>
+				<string>We need to cheer loudly.</string>
 				<key>C</key>
-				<string></string>
+				<string>This exam is not fair.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q5.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>When did he arrive?</string>
 				<key>A</key>
-				<string></string>
+				<string>By train.</string>
 				<key>B</key>
-				<string></string>
+				<string>Shortly after lunch.</string>
 				<key>C</key>
-				<string></string>
+				<string>In the mail.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q6.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>How long have you worked here?</string>
 				<key>A</key>
-				<string></string>
+				<string>Only for a few months.</string>
 				<key>B</key>
-				<string></string>
+				<string>I work on Tuesdays.</string>
 				<key>C</key>
-				<string></string>
+				<string>She can&apos;t hear if you sing along.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q7.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Where did you park your car?</string>
 				<key>A</key>
-				<string></string>
+				<string>In the darkroom.</string>
 				<key>B</key>
-				<string></string>
+				<string>The park is easy to get to.</string>
 				<key>C</key>
-				<string></string>
+				<string>In the lot across the street.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q8.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>What should I do now?</string>
 				<key>A</key>
-				<string></string>
+				<string>Why don&apos;t you make some coffee?</string>
 				<key>B</key>
-				<string></string>
+				<string>The wood is on the fire.</string>
 				<key>C</key>
-				<string></string>
+				<string>You were the first one here.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q9.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>When does the meeting start?</string>
 				<key>A</key>
-				<string></string>
+				<string>The meat is frozen.</string>
 				<key>B</key>
-				<string></string>
+				<string>The car won&apos;t start.</string>
 				<key>C</key>
-				<string></string>
+				<string>At 10 AM sharp.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q10.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Who delivered the letter?</string>
 				<key>A</key>
-				<string></string>
+				<string>A messenger brought it.</string>
 				<key>B</key>
-				<string></string>
+				<string>The ladder is in the closet.</string>
 				<key>C</key>
-				<string></string>
+				<string>I&apos;ll let her leave sooner or later.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q11.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>How large is your company?</string>
 				<key>A</key>
-				<string></string>
+				<string>It&apos;s about 10 inches.</string>
 				<key>B</key>
-				<string></string>
+				<string>It&apos;s as big as a penny.</string>
 				<key>C</key>
-				<string></string>
+				<string>We have offices in ten countries.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q12.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Where would you like to eat?</string>
 				<key>A</key>
-				<string></string>
+				<string>Let&apos;s go to an Italian restaurant.</string>
 				<key>B</key>
-				<string></string>
+				<string>The heat is very bad in here.</string>
 				<key>C</key>
-				<string></string>
+				<string>I always eat at eight.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q13.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Why is there no electricity today?</string>
 				<key>A</key>
-				<string></string>
+				<string>I prefer to cook with gas.</string>
 				<key>B</key>
-				<string></string>
+				<string>The power company shut it off for an hour.</string>
 				<key>C</key>
-				<string></string>
+				<string>The elections are Saturday.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s1q14.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Which is taller - this building or the one next door?</string>
 				<key>A</key>
-				<string></string>
+				<string>Both are the same height.</string>
 				<key>B</key>
-				<string></string>
+				<string>The cabinet is well-built.</string>
 				<key>C</key>
-				<string></string>
+				<string>The construction crew stops at noon.</string>
 				<key>D</key>
 				<string></string>
 				<key>answer</key>
-				<string></string>
-			</dict>
-		</array>
-		<array>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 		</array>
 		<array>
@@ -629,17 +483,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>I speak French but ________ English.</string>
 				<key>A</key>
-				<string></string>
+				<string>I speak not</string>
 				<key>B</key>
-				<string></string>
+				<string>I&apos;m not speak</string>
 				<key>C</key>
-				<string></string>
+				<string>I doesn&apos;t speak</string>
 				<key>D</key>
-				<string></string>
+				<string>I don&apos;t speak</string>
 				<key>answer</key>
-				<string></string>
+				<string>D</string>
 			</dict>
 			<dict>
 				<key>img</key>
@@ -647,17 +501,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>Why ________ angry with me yesterday ?</string>
 				<key>A</key>
-				<string></string>
+				<string>was you</string>
 				<key>B</key>
-				<string></string>
+				<string>were you</string>
 				<key>C</key>
-				<string></string>
+				<string>you where</string>
 				<key>D</key>
-				<string></string>
+				<string>have you been</string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
@@ -665,17 +519,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>My brother ________ for me when I arrived.</string>
 				<key>A</key>
-				<string></string>
+				<string>waited</string>
 				<key>B</key>
-				<string></string>
+				<string>has waited</string>
 				<key>C</key>
-				<string></string>
+				<string>was waiting</string>
 				<key>D</key>
-				<string></string>
+				<string>is waiting</string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
@@ -683,17 +537,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>Paul is always in the kitchen. He enjoys ________ .</string>
 				<key>A</key>
-				<string></string>
+				<string>cook</string>
 				<key>B</key>
-				<string></string>
+				<string>to cook</string>
 				<key>C</key>
-				<string></string>
+				<string>cooking</string>
 				<key>D</key>
-				<string></string>
+				<string>for cooking</string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
@@ -701,17 +555,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>We would like you ________ for dinner on Sunday.</string>
 				<key>A</key>
-				<string></string>
+				<string>come</string>
 				<key>B</key>
-				<string></string>
+				<string>to come</string>
 				<key>C</key>
-				<string></string>
+				<string>coming</string>
 				<key>D</key>
-				<string></string>
+				<string>comes</string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
@@ -719,17 +573,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>Do you want ________ you ?</string>
 				<key>A</key>
-				<string></string>
+				<string>that I help</string>
 				<key>B</key>
-				<string></string>
+				<string>me to help</string>
 				<key>C</key>
-				<string></string>
+				<string>me helping</string>
 				<key>D</key>
-				<string></string>
+				<string>me help</string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
@@ -737,17 +591,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>I usually go to work ________ .</string>
 				<key>A</key>
-				<string></string>
+				<string>in the train</string>
 				<key>B</key>
-				<string></string>
+				<string>on foot</string>
 				<key>C</key>
-				<string></string>
+				<string>by a taxi</string>
 				<key>D</key>
-				<string></string>
+				<string>with the bus</string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
@@ -755,161 +609,17 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>Susan has gone ________ Italy. She&apos;ll be back soon.</string>
 				<key>A</key>
-				<string></string>
+				<string>in</string>
 				<key>B</key>
-				<string></string>
+				<string>at</string>
 				<key>C</key>
-				<string></string>
+				<string>on</string>
 				<key>D</key>
-				<string></string>
+				<string>to</string>
 				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>img</key>
-				<string></string>
-				<key>sound</key>
-				<string></string>
-				<key>question</key>
-				<string></string>
-				<key>A</key>
-				<string></string>
-				<key>B</key>
-				<string></string>
-				<key>C</key>
-				<string></string>
-				<key>D</key>
-				<string></string>
-				<key>answer</key>
-				<string></string>
+				<string>D</string>
 			</dict>
 		</array>
 		<array>
@@ -919,7 +629,8 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>Short Conversations
+Directions: You will hear a short converstation. You will see a question and four possible answers. Choose the best answer to the question and fill in the corresponding oval on your answer form.</string>
 				<key>A</key>
 				<string></string>
 				<key>B</key>
@@ -935,9 +646,327 @@
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
+				<string>s2q0.mp3</string>
+				<key>question</key>
+				<string>M: This should be a fun evening.&lt;br&gt;
+W: Yes, I’ve been looking forward to seeing the play.&lt;br&gt;
+M: The reviews haven’t been that good though.&lt;br&gt;
+What are they going to do?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Make a phone call.</string>
+				<key>B</key>
+				<string>Play tennis.</string>
+				<key>C</key>
+				<string>Go to the theater.</string>
+				<key>D</key>
+				<string>See a movie.</string>
+				<key>answer</key>
+				<string>C</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q1.mp3</string>
+				<key>question</key>
+				<string>M: What seems to be the matter with your foream?&lt;br&gt;
+W: I was getting off the bus and I fell down the stairs.&lt;br&gt;
+M: It looks swollen. Let me take an X ray.&lt;br&gt;
+Who are the speakers?&lt;br&gt;</string>
+				<key>A</key>
+				<string>A doctor and patient.</string>
+				<key>B</key>
+				<string>A carpenter and foreman.</string>
+				<key>C</key>
+				<string>A mother and son.</string>
+				<key>D</key>
+				<string>A bus driver and a rider.</string>
+				<key>answer</key>
+				<string>A</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q2.mp3</string>
+				<key>question</key>
+				<string>M: If we leave now, we can be there at six.&lt;br&gt;
+W: It’s rush hour now. Let’s wait an hour.&lt;br&gt;
+M: Alright, but don’t blame me if we’re late.&lt;br&gt;
+Why does the woman want to wait?&lt;br&gt;</string>
+				<key>A</key>
+				<string>She doesn&apos;t want to be early.</string>
+				<key>B</key>
+				<string>There is too much traffic.</string>
+				<key>C</key>
+				<string>She is sick.</string>
+				<key>D</key>
+				<string>She prefers to be late.</string>
+				<key>answer</key>
+				<string>B</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q3.mp3</string>
+				<key>question</key>
+				<string>M: Oh no! the golf course is covered with snow.&lt;br&gt;
+W: It’s going to snow through the weekend.&lt;br&gt;
+M: I wish my sport were skiing rather than golf.&lt;br&gt;
+What does the man want to do?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Play in the snow.</string>
+				<key>B</key>
+				<string>Go skiing.</string>
+				<key>C</key>
+				<string>Play golf.</string>
+				<key>D</key>
+				<string>Go away for the weekend.</string>
+				<key>answer</key>
+				<string>C</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q4.mp3</string>
+				<key>question</key>
+				<string>M: Did I have any calls?&lt;br&gt;
+W: Yes - about twenty. I left all the messages in your desk.&lt;br&gt;
+M: Thanks. Would you get me a purchase order form, please?&lt;br&gt;
+Where does this conversation take place?&lt;br&gt;</string>
+				<key>A</key>
+				<string>On the street.</string>
+				<key>B</key>
+				<string>In an office.</string>
+				<key>C</key>
+				<string>On a bus.</string>
+				<key>D</key>
+				<string>At home.</string>
+				<key>answer</key>
+				<string>B</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q5.mp3</string>
+				<key>question</key>
+				<string>M: Are you too busy to see me sometime next week?&lt;br&gt;
+W: Any day but Wednesday. Would Friday afternoon be OK?&lt;br&gt;
+M: Actually, it’s not. Let’s meet the following week.&lt;br&gt;
+When will they get together?&lt;br&gt;</string>
+				<key>A</key>
+				<string>The week after next.</string>
+				<key>B</key>
+				<string>On Friday afternoon.</string>
+				<key>C</key>
+				<string>Next week.</string>
+				<key>D</key>
+				<string>On Wednesday morning.</string>
+				<key>answer</key>
+				<string>A</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q6.mp3</string>
+				<key>question</key>
+				<string>M: Last year thirty percent of our budget was spent on advertising.&lt;br&gt;
+W: Was that all in TV advertising?&lt;br&gt;
+M: No, half of it was in print.&lt;br&gt;
+What percentage was spent on advertising?&lt;br&gt;</string>
+				<key>A</key>
+				<string>5%.</string>
+				<key>B</key>
+				<string>13%.</string>
+				<key>C</key>
+				<string>15%.</string>
+				<key>D</key>
+				<string>30%.</string>
+				<key>answer</key>
+				<string>D</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q7.mp3</string>
+				<key>question</key>
+				<string>M: I’m really exhausted.&lt;br&gt;
+W: I’ve never worked so hard in my life.&lt;br&gt;
+M: We deserve a bonus for this.&lt;br&gt;
+How do the speakers feel?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Tired.</string>
+				<key>B</key>
+				<string>Sad.</string>
+				<key>C</key>
+				<string>Poor.</string>
+				<key>D</key>
+				<string>Ecstatic.</string>
+				<key>answer</key>
+				<string>A</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q8.mp3</string>
+				<key>question</key>
+				<string>M: How many more letters do I have to sign?&lt;br&gt;
+W: There are only a few more and we’ll be finished.&lt;br&gt;
+M: I’m going to need a new pen after this.&lt;br&gt;
+What are the speakers doing?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Signing letters.</string>
+				<key>B</key>
+				<string>Buying a new pen.</string>
+				<key>C</key>
+				<string>Making a sign.</string>
+				<key>D</key>
+				<string>Finishing a book.</string>
+				<key>answer</key>
+				<string>A</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q9.mp3</string>
+				<key>question</key>
+				<string>M: I’d like to exchange this shirt, please.&lt;br&gt;
+W: Of course, sir. What would you like instead?&lt;br&gt;
+M: I’d prefer one with long sleeves and in blue.&lt;br&gt;
+Where does this conversation take place?&lt;br&gt;</string>
+				<key>A</key>
+				<string>At the stock exchange.</string>
+				<key>B</key>
+				<string>At a restaurant.</string>
+				<key>C</key>
+				<string>At a train station.</string>
+				<key>D</key>
+				<string>At a clothing store.</string>
+				<key>answer</key>
+				<string>D</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q10.mp3</string>
+				<key>question</key>
+				<string>M: I’m almost finished doing the invoices and the payroll.&lt;br&gt;
+W: I needed the tax statement for this quarter first.&lt;br&gt;
+M: I can’t compute the taxes without the salary information.&lt;br&gt;
+What is the relationship of the speakers?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Singer and conductor.</string>
+				<key>B</key>
+				<string>Banker and customer.</string>
+				<key>C</key>
+				<string>Accountant and client.</string>
+				<key>D</key>
+				<string>Computer buyer and clerk.</string>
+				<key>answer</key>
+				<string>C</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q11.mp3</string>
+				<key>question</key>
+				<string>M: Are you going to New York or Paris this fall?&lt;br&gt;
+W: Neither. I want to go to some place warmer.&lt;br&gt;
+M: Why don’t you stay home then?&lt;br&gt;
+What does the man suggest the woman do?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Go to warmer place.</string>
+				<key>B</key>
+				<string>Stay home.</string>
+				<key>C</key>
+				<string>Visit Paris.</string>
+				<key>D</key>
+				<string>Move to New York.</string>
+				<key>answer</key>
+				<string>B</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q12.mp3</string>
+				<key>question</key>
+				<string>M: I can’t this printer to work. The paper always jams.&lt;br&gt;
+W: Let me see if I can fix it.&lt;br&gt;
+M: Thanks. I really need to get these letters in the mail.&lt;br&gt;
+What does the woman offer to do?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Fix the printer.</string>
+				<key>B</key>
+				<string>Type a letter.</string>
+				<key>C</key>
+				<string>Mail the letters.</string>
+				<key>D</key>
+				<string>Buy some jam.</string>
+				<key>answer</key>
+				<string>A</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q13.mp3</string>
+				<key>question</key>
+				<string>M: Excuse me. But does this bus go to 75th Street?&lt;br&gt;
+W: No. This one turns at 57th. You need the M5 bus.&lt;br&gt;
+M: I’ve waited long enough for this one. I think I’ll just walk.&lt;br&gt;
+What did the man decide to do?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Take another bus.</string>
+				<key>B</key>
+				<string>Walk to 75th Street.</string>
+				<key>C</key>
+				<string>Turn at 57th Street.</string>
+				<key>D</key>
+				<string>Wait for his friend.</string>
+				<key>answer</key>
+				<string>B</string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string>s2q14.mp3</string>
+				<key>question</key>
+				<string>M: Did you see that bird?&lt;br&gt;
+W: No, what kind was it?&lt;br&gt;
+M: I don’t know, but it flew by really fast.&lt;br&gt;
+What did the man see?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Someone with the flu.</string>
+				<key>B</key>
+				<string>A fast-flying bird.</string>
+				<key>C</key>
+				<string>A kind person.</string>
+				<key>D</key>
+				<string>Someone from his past.</string>
+				<key>answer</key>
+				<string>B</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string></string>
+				<string>Short Talks 
+Directions: You will hear a short talk. You will see several questions on the talk and four possible answers. Choose the best answer to the question and fill in the corresponding oval on your answer form.</string>
 				<key>A</key>
 				<string></string>
 				<key>B</key>
@@ -953,163 +982,191 @@
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q0.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>This train makes all stops between Grand Central Station and 125th (one-hundred-twenty-fifth) Street. The express train is across the station. Please step in and watch the closing doors.&lt;br&gt;
+Where was this announcement made?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>On a train.</string>
 				<key>B</key>
-				<string></string>
+				<string>At an intersection.</string>
 				<key>C</key>
-				<string></string>
+				<string>On an escalator.</string>
 				<key>D</key>
-				<string></string>
+				<string>In a grain elevator.</string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q1.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>This train makes all stops between Grand Central Station and 125th (one-hundred-twenty-fifth) Street. The express train is across the station. Please step in and watch the closing doors.&lt;br&gt;
+What kind of service is provided?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>Express - no stops.</string>
 				<key>B</key>
-				<string></string>
+				<string>Local - all stops.</string>
 				<key>C</key>
-				<string></string>
+				<string>Limited - some stops.</string>
 				<key>D</key>
-				<string></string>
+				<string>Out-of-service.</string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q2.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>At six AM the temperature at National Airport is 53 degrees. Today’s forecast calls for rain early in the morning with skies clearing by noon. The rest of the day will be seasonably mild with winds developing in the evening.&lt;br&gt;
+What should people take to work in the morning?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>Snow boots.</string>
 				<key>B</key>
-				<string></string>
+				<string>Luggage.</string>
 				<key>C</key>
-				<string></string>
+				<string>Sunscreen.</string>
 				<key>D</key>
-				<string></string>
+				<string>Umbrellas.</string>
 				<key>answer</key>
-				<string></string>
+				<string>D</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q3.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>At six AM the temperature at National Airport is 53 degrees. Today’s forecast calls for rain early in the morning with skies clearing by noon. The rest of the day will be seasonably mild with winds developing in the evening.&lt;br&gt;
+When will the weather clear up?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>By 6:00 AM.</string>
 				<key>B</key>
-				<string></string>
+				<string>By noon.</string>
 				<key>C</key>
-				<string></string>
+				<string>By late afternoon.</string>
 				<key>D</key>
-				<string></string>
+				<string>By early evening.</string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q4.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Due to the extremely hot weather, the electric company is planning to turn off power in certain districts during the day. This will reduce the total demand for electricity and prevent a city-wide shutdown of electrical services. Power will not be out longer than two hours in your area.&lt;br&gt;
+Why is power being turn off?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>To reduce total demand.</string>
 				<key>B</key>
-				<string></string>
+				<string>To save money.</string>
 				<key>C</key>
-				<string></string>
+				<string>To make it cooler.</string>
 				<key>D</key>
-				<string></string>
+				<string>To make the city pay its bill.</string>
 				<key>answer</key>
-				<string></string>
+				<string>A</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q5.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Due to the extremely hot weather, the electric company is planning to turn off power in certain districts during the day. This will reduce the total demand for electricity and prevent a city-wide shutdown of electrical services. Power will not be out longer than two hours in your area.&lt;br&gt;
+How long will power be off?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>Longer than two hours.</string>
 				<key>B</key>
-				<string></string>
+				<string>Less than two hours.</string>
 				<key>C</key>
-				<string></string>
+				<string>For one day.</string>
 				<key>D</key>
-				<string></string>
+				<string>Until the weather changes.</string>
 				<key>answer</key>
-				<string></string>
+				<string>B</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q6.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Good morning, ladies and gentlemen. This is your cruise director speaking. It’s 7:30 and it’s a beautiful day at sea. We have a lot planned for you both on ship and on shore. The first shore excursion will depart from the Main Deck at 9 AM. Anyone wishing to go ashore at this time should report to the lounge for a ticket. Enjoy your breakfast.&lt;br&gt;
+Where does this announcement take place?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>On a tour bus.</string>
 				<key>B</key>
-				<string></string>
+				<string>At the shore.</string>
 				<key>C</key>
-				<string></string>
+				<string>In a cocktail lounge.</string>
 				<key>D</key>
-				<string></string>
+				<string>On a ship.</string>
 				<key>answer</key>
-				<string></string>
+				<string>D</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q7.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Good morning, ladies and gentlemen. This is your cruise director speaking. It’s 7:30 and it’s a beautiful day at sea. We have a lot planned for you both on ship and on shore. The first shore excursion will depart from the Main Deck at 9 AM. Anyone wishing to go ashore at this time should report to the lounge for a ticket. Enjoy your breakfast.&lt;br&gt;
+What is required for the first excursion?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>A hearty breakfast.</string>
 				<key>B</key>
-				<string></string>
+				<string>Some beautiful clothes.</string>
 				<key>C</key>
-				<string></string>
+				<string>A ticket.</string>
 				<key>D</key>
-				<string></string>
+				<string>A health report.</string>
 				<key>answer</key>
-				<string></string>
+				<string>C</string>
 			</dict>
 			<dict>
 				<key>img</key>
 				<string></string>
 				<key>sound</key>
-				<string></string>
+				<string>s3q8.mp3</string>
 				<key>question</key>
-				<string></string>
+				<string>Are you tired of getting up to turn off the television? Tired of getting up to turn down the radio? Turn on the video recorder? Our new remote control will let you operate any electronic appliance in your home from a comfortable chair. Call our toll-free number for more information. No sales personnel will call your home.&lt;br&gt;
+What is being offered?&lt;br&gt;</string>
 				<key>A</key>
-				<string></string>
+				<string>A television.</string>
 				<key>B</key>
-				<string></string>
+				<string>A radio.</string>
 				<key>C</key>
-				<string></string>
+				<string>A video recorder.</string>
 				<key>D</key>
-				<string></string>
+				<string>A remote control device.</string>
 				<key>answer</key>
+				<string>D</string>
+			</dict>
+			<dict>
+				<key>img</key>
 				<string></string>
+				<key>sound</key>
+				<string>s3q8.mp3</string>
+				<key>question</key>
+				<string>Are you tired of getting up to turn off the television? Tired of getting up to turn down the radio? Turn on the video recorder? Our new remote control will let you operate any electronic appliance in your home from a comfortable chair. Call our toll-free number for more information. No sales personnel will call your home.&lt;br&gt;
+How can a consumer learn more?&lt;br&gt;</string>
+				<key>A</key>
+				<string>Have a salesperson call at home.</string>
+				<key>B</key>
+				<string>Visit their office.</string>
+				<key>C</key>
+				<string>Call a toll-free number.</string>
+				<key>D</key>
+				<string>Read an electronic magazine.</string>
+				<key>answer</key>
+				<string>C</string>
 			</dict>
 		</array>
 	</array>
