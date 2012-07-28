@@ -13,6 +13,10 @@
 @synthesize questionNumber;
 @synthesize questionText;
 @synthesize questionAnswer;
+@synthesize answerA;
+@synthesize answerB;
+@synthesize answerC;
+@synthesize answerD;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

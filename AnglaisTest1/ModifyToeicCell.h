@@ -14,4 +14,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionNumber;
 @property (weak, nonatomic) IBOutlet UILabel *questionText;
 @property (weak, nonatomic) IBOutlet UILabel *questionAnswer;
+
+@property (weak, nonatomic) IBOutlet UILabel *answerA;
+@property (weak, nonatomic) IBOutlet UILabel *answerB;
+@property (weak, nonatomic) IBOutlet UILabel *answerC;
+@property (weak, nonatomic) IBOutlet UILabel *answerD;
+
 @end

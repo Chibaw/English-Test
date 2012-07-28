@@ -15,11 +15,10 @@
 @end
 
 @implementation ModifyToeicViewController
-@synthesize array;
-@synthesize questionNumbers = _questionNumbers;
-@synthesize questionTexts = _questionTexts;
-@synthesize questionAnswers = _questionAnswers;
-
+@synthesize sectionsArray;
+@synthesize questionNumbers;
+@synthesize questionTexts;
+@synthesize questionAnswers;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,43 +34,40 @@
     [super viewDidLoad];
     
     
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"users" ofType:@"plist"];
-//    
-//    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
-//    self.array = [NSArray alloc];
-//    self.array = [dic objectForKey:@"QuestionsAndAnswers"];
-//    
-//    NSUInteger count = [self.array count];
-//    for (NSUInteger index = 0; index < count; index++)
-//    {  
-//        [[self.array objectAtIndex: index] objectForKey: @"lastName"];
-//        [[self.array objectAtIndex: index] objectForKey: @"firstName"];
-//        [[self.array objectAtIndex: index] objectForKey: @"mail"];
-//    }
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
     
-    self.questionNumbers = [[NSArray alloc]
-                            initWithObjects:
-                            @"1",
-                            @"2",
-                            @"3",
-                            @"4",
-                            @"5", nil];
-    
-    self.questionTexts = [[NSArray alloc]
-                            initWithObjects:
-                            @"Would you ...",
-                            @"What is the ...",
-                            @"Is the ....",
-                            @"In your opinion ...",
-                            @"As regard of ...", nil];
-    
-    self.questionAnswers = [[NSArray alloc]
-                            initWithObjects:
-                            @"A",
-                            @"B",
-                            @"C",
-                            @"D",
-                            @"B", nil];
+    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
+    self.sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
+
+    self.questionAnswers = [[NSMutableArray alloc] initWithObjects:nil, nil];
+    self.questionTexts = [[NSMutableArray alloc] initWithObjects:nil, nil];
+    self.questionNumbers = [[NSMutableArray alloc] initWithObjects:nil, nil];
+
+    self.answerAs = [[NSMutableArray alloc] initWithObjects:nil, nil];
+    self.answerBs = [[NSMutableArray alloc] initWithObjects:nil, nil];
+    self.answerCs = [[NSMutableArray alloc] initWithObjects:nil, nil];
+    self.answerDs = [[NSMutableArray alloc] initWithObjects:nil, nil];
+
+    NSUInteger questionCount = 0;
+    NSUInteger countSections = [self.sectionsArray count];
+    for (NSUInteger indexSections = 0; indexSections < countSections; indexSections++) {
+        
+        NSArray *question = [self.sectionsArray objectAtIndex:indexSections];
+        NSUInteger count = [question count];
+        for (NSUInteger index = 0; index < count; index++)
+        {
+            [self.questionNumbers addObject:[NSString stringWithFormat:@"%u", questionCount+1]];
+            [self.questionTexts addObject:[[[question objectAtIndex: index] copy] objectForKey: @"question"]];
+            [self.questionAnswers addObject:[[question objectAtIndex: index] objectForKey: @"answer"]];
+
+            [self.answerAs addObject:[[question objectAtIndex: index] objectForKey: @"A"]];
+            [self.answerBs addObject:[[question objectAtIndex: index] objectForKey: @"B"]];
+            [self.answerCs addObject:[[question objectAtIndex: index] objectForKey: @"C"]];
+            [self.answerDs addObject:[[question objectAtIndex: index] objectForKey: @"D"]];
+            questionCount++;
+        }
+        
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -105,7 +101,7 @@
 {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.questionNumbers count];
+    return [self.questionTexts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -115,6 +111,11 @@
     cell.questionNumber.text = [self.questionNumbers objectAtIndex: [indexPath row]];
     cell.questionText.text = [self.questionTexts objectAtIndex:[indexPath row]];
     cell.questionAnswer.text = [self.questionAnswers objectAtIndex: [indexPath row]];
+
+    cell.answerA.text = [self.answerAs objectAtIndex: [indexPath row]];
+    cell.answerB.text = [self.answerBs objectAtIndex: [indexPath row]];
+    cell.answerC.text = [self.answerCs objectAtIndex: [indexPath row]];
+    cell.answerD.text = [self.answerDs objectAtIndex: [indexPath row]];
     return cell;
 }
 

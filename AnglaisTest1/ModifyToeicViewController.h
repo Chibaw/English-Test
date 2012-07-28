@@ -11,8 +11,14 @@
 
 @interface ModifyToeicViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *questionNumbers;
-@property (nonatomic, strong) NSArray *questionTexts;
-@property (nonatomic, strong) NSArray *questionAnswers;
-@property (nonatomic, strong) NSArray *array;
+@property (nonatomic, strong) NSMutableArray *questionNumbers;
+@property (nonatomic, strong) NSMutableArray *questionTexts;
+@property (nonatomic, strong) NSMutableArray *questionAnswers;
+
+@property (nonatomic, strong) NSMutableArray *answerAs;
+@property (nonatomic, strong) NSMutableArray *answerBs;
+@property (nonatomic, strong) NSMutableArray *answerCs;
+@property (nonatomic, strong) NSMutableArray *answerDs;
+
+@property (nonatomic, strong) NSArray *sectionsArray;
 @end

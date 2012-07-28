@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E2705" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="aD4-q1-tib">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="aD4-q1-tib">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--English Test View Controller-->
@@ -336,16 +335,16 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzP-ZW-ddX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="fnt-g7-lxV" customClass="ModifyToeicViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="169" sectionHeaderHeight="22" sectionFooterHeight="22" id="yQo-4M-n5H">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="123" sectionHeaderHeight="22" sectionFooterHeight="22" id="yQo-4M-n5H">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="modifyToeicCell" rowHeight="169" id="bHk-nM-77d" customClass="ModifyToeicCell">
-                                <rect key="frame" x="0.0" y="22" width="768" height="169"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="modifyToeicCell" rowHeight="123" id="bHk-nM-77d" customClass="ModifyToeicCell">
+                                <rect key="frame" x="0.0" y="22" width="768" height="123"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="168"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="122"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ue0-zJ-tVj">
@@ -355,7 +354,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Question" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="k7h-MA-2T3">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" id="k7h-MA-2T3">
                                             <rect key="frame" x="70" y="0.0" width="596" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -369,10 +368,42 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A - answerA" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8jf-8v-Miu">
+                                            <rect key="frame" x="152" y="52" width="295" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="C - answerC" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="FzS-xu-Psj">
+                                            <rect key="frame" x="453" y="52" width="295" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B - answerB" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="enl-Lh-JOh">
+                                            <rect key="frame" x="152" y="81" width="295" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="D - answerD" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LeD-Iz-0Fx">
+                                            <rect key="frame" x="453" y="81" width="295" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="answerA" destination="8jf-8v-Miu" id="C5G-8U-44k"/>
+                                    <outlet property="answerB" destination="enl-Lh-JOh" id="Owo-rR-Y42"/>
+                                    <outlet property="answerC" destination="FzS-xu-Psj" id="ogr-MK-BG0"/>
+                                    <outlet property="answerD" destination="LeD-Iz-0Fx" id="jU6-Cp-xnI"/>
                                     <outlet property="questionAnswer" destination="uey-qO-bk2" id="n41-1X-7fx"/>
                                     <outlet property="questionNumber" destination="Ue0-zJ-tVj" id="UVz-4n-x7a"/>
                                     <outlet property="questionText" destination="k7h-MA-2T3" id="1J3-gR-N81"/>
@@ -561,6 +592,10 @@
         <class className="ModifyToeicCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ModifyToeicCell.h"/>
             <relationships>
+                <relationship kind="outlet" name="answerA" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="answerB" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="answerC" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="answerD" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="questionAnswer" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="questionNumber" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="questionText" candidateClass="UILabel"/>
