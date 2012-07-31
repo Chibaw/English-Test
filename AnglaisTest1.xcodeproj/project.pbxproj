@@ -88,6 +88,7 @@
 		04D6F79E15B460DA000F1A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F79D15B460DA000F1A1F /* main.m */; };
 		04D6F7A215B460DA000F1A1F /* EnglishTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F7A115B460DA000F1A1F /* EnglishTestAppDelegate.m */; };
 		04D6F7A815B460DA000F1A1F /* EnglishTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */; };
+		42196DA615C85A410004B1CE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42196DA515C85A410004B1CE /* AVFoundation.framework */; };
 		42AF96ED15BEFD3A00587D05 /* questions_and_answers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AF96EC15BEFD3A00587D05 /* questions_and_answers.plist */; };
 		42AF96F015BF0D8000587D05 /* QuestionsAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AF96EF15BF0D8000587D05 /* QuestionsAnswersViewController.m */; };
 /* End PBXBuildFile section */
@@ -189,6 +190,7 @@
 		04D6F7A115B460DA000F1A1F /* EnglishTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishTestAppDelegate.m; sourceTree = "<group>"; };
 		04D6F7A615B460DA000F1A1F /* EnglishTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnglishTestViewController.h; sourceTree = "<group>"; };
 		04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishTestViewController.m; sourceTree = "<group>"; };
+		42196DA515C85A410004B1CE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		42AF96EC15BEFD3A00587D05 /* questions_and_answers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions_and_answers.plist; sourceTree = "<group>"; };
 		42AF96EE15BF0D8000587D05 /* QuestionsAnswersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsAnswersViewController.h; sourceTree = "<group>"; };
 		42AF96EF15BF0D8000587D05 /* QuestionsAnswersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsAnswersViewController.m; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42196DA615C85A410004B1CE /* AVFoundation.framework in Frameworks */,
 				04D6F79215B460DA000F1A1F /* UIKit.framework in Frameworks */,
 				04D6F79415B460DA000F1A1F /* Foundation.framework in Frameworks */,
 				04D6F79615B460DA000F1A1F /* CoreGraphics.framework in Frameworks */,
@@ -338,6 +341,7 @@
 		04D6F79015B460DA000F1A1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42196DA515C85A410004B1CE /* AVFoundation.framework */,
 				04BDE4FE15B56F3F0075F0C5 /* CoreData.framework */,
 				04D6F79115B460DA000F1A1F /* UIKit.framework */,
 				04D6F79315B460DA000F1A1F /* Foundation.framework */,

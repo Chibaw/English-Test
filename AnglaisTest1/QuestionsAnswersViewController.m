@@ -15,6 +15,9 @@
 @synthesize it;
 @synthesize questionsArray;
 @synthesize dic;
+@synthesize player;
+@synthesize sectionsArray;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,13 +28,29 @@
     return self;
 }
 
+- (void)playQuestionSound:(NSString*)name
+{
+    if (player != nil){
+        [player stop];
+    }
+    NSString        *path = [[NSBundle mainBundle]
+                             pathForResource:name ofType:nil];
+    NSURL           *url = [[NSURL alloc] initFileURLWithPath:path];
+    AVAudioPlayer   *sound = [[AVAudioPlayer alloc]
+                              initWithContentsOfURL:url error:nil];
+    player = sound;
+    [player prepareToPlay];
+    [player play];
+}
+
 - (void)showNextAnswers
 {
     if (questionsArray == nil)
-        NSLog(@"fail");
+        NSLog(@"fail load question array");
     NSDictionary *item = [it nextObject];
     if (item == nil)
         NSLog(@"failure");
+    [self playQuestionSound:[item objectForKey:@"sound"]];
     [answerA setText:[item objectForKey:@"A"]];
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
@@ -41,9 +60,12 @@
 {
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
+    
     dic = [[NSDictionary alloc] initWithContentsOfFile:path];
-    questionsArray = [dic objectForKey:@"QuestionsAndAnswers"];
+    sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
+    questionsArray = [sectionsArray objectAtIndex:1];
     it = [questionsArray objectEnumerator];
+    [it nextObject];
     [self showNextAnswers];
     // Do any additional setup after loading the view.
 }
