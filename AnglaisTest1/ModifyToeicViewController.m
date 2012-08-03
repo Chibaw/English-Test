@@ -9,13 +9,13 @@
 
 #import "ModifyToeicViewController.h"
 #import "ModifyToeicCell.h"
+#import "MTDetailViewController.h"
 
 @interface ModifyToeicViewController ()
 
 @end
 
 @implementation ModifyToeicViewController
-@synthesize sectionsArray;
 @synthesize questionNumbers;
 @synthesize questionTexts;
 @synthesize questionAnswers;
@@ -34,10 +34,10 @@
     [super viewDidLoad];
     
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
+    self.path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
     
-    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
-    self.sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
+    self.dic = [[NSMutableDictionary alloc] initWithContentsOfFile:self.path];
+    NSArray *sectionsArray = [[NSArray alloc] initWithArray:[self.dic objectForKey:@"QuestionsAndAnswers"]];
 
     self.questionAnswers = [[NSMutableArray alloc] initWithObjects:nil, nil];
     self.questionTexts = [[NSMutableArray alloc] initWithObjects:nil, nil];
@@ -49,10 +49,10 @@
     self.answerDs = [[NSMutableArray alloc] initWithObjects:nil, nil];
 
     NSUInteger questionCount = 0;
-    NSUInteger countSections = [self.sectionsArray count];
+    NSUInteger countSections = [sectionsArray count];
     for (NSUInteger indexSections = 0; indexSections < countSections; indexSections++) {
         
-        NSArray *question = [self.sectionsArray objectAtIndex:indexSections];
+        NSArray *question = [sectionsArray objectAtIndex:indexSections];
         NSUInteger count = [question count];
         for (NSUInteger index = 0; index < count; index++)
         {
@@ -68,12 +68,6 @@
         }
         
     }
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -162,13 +156,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    MTDetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ToeicAdminId"];
+//    NSLog(@"%u", [indexPath indexAtPosition:1]);
+    [detailViewController setNum:indexPath];
+    [detailViewController setDic:self.dic];
+    [detailViewController setPath:self.path];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end

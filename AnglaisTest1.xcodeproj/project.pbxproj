@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3215B583AA00711079 /* GeneralConditionsViewController.m */; };
-		04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */; };
+		0479F33115C98D0900BE85AD /* MTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479F33015C98D0900BE85AD /* MTDetailViewController.m */; };
+		0479F33415C98DE800BE85AD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0479F33315C98DE800BE85AD /* MainStoryboard.storyboard */; };
 		048F36AB15C18F6600FA41EC /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048F367615C18F6600FA41EC /* intro.mp3 */; };
 		048F36AC15C18F6600FA41EC /* s0q0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048F367715C18F6600FA41EC /* s0q0.mp3 */; };
 		048F36AD15C18F6600FA41EC /* s0q1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048F367815C18F6600FA41EC /* s0q1.mp3 */; };
@@ -97,7 +98,9 @@
 		042DBDE015BC4A2E00738FDA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		04422E3115B583AA00711079 /* GeneralConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralConditionsViewController.h; sourceTree = "<group>"; };
 		04422E3215B583AA00711079 /* GeneralConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralConditionsViewController.m; sourceTree = "<group>"; };
-		04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0479F32F15C98D0900BE85AD /* MTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDetailViewController.h; sourceTree = "<group>"; };
+		0479F33015C98D0900BE85AD /* MTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDetailViewController.m; sourceTree = "<group>"; };
+		0479F33315C98DE800BE85AD /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		048F367615C18F6600FA41EC /* intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = intro.mp3; path = Assets/Audio/intro.mp3; sourceTree = "<group>"; };
 		048F367715C18F6600FA41EC /* s0q0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = s0q0.mp3; path = Assets/Audio/s0q0.mp3; sourceTree = "<group>"; };
 		048F367815C18F6600FA41EC /* s0q1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = s0q1.mp3; path = Assets/Audio/s0q1.mp3; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 				0493F33B15BDC27B00A6CA86 /* AdminUsersViewController.m */,
 				0493F33D15BDC29100A6CA86 /* AdminUsersCell.h */,
 				0493F33E15BDC29100A6CA86 /* AdminUsersCell.m */,
+				0479F32F15C98D0900BE85AD /* MTDetailViewController.h */,
+				0479F33015C98D0900BE85AD /* MTDetailViewController.m */,
 			);
 			name = administration;
 			sourceTree = "<group>";
@@ -355,7 +360,7 @@
 			children = (
 				04A7132215BD81860017CC1C /* administration */,
 				04D6F79815B460DA000F1A1F /* Supporting Files */,
-				04422E3B15B58BFB00711079 /* MainStoryboard.storyboard */,
+				0479F33315C98DE800BE85AD /* MainStoryboard.storyboard */,
 				04D6F7A015B460DA000F1A1F /* EnglishTestAppDelegate.h */,
 				04D6F7A115B460DA000F1A1F /* EnglishTestAppDelegate.m */,
 				04D6F7A615B460DA000F1A1F /* EnglishTestViewController.h */,
@@ -434,7 +439,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D6F79C15B460DA000F1A1F /* InfoPlist.strings in Resources */,
-				04422E3C15B58BFB00711079 /* MainStoryboard.storyboard in Resources */,
 				0493F34315BDD8F800A6CA86 /* users.plist in Resources */,
 				42AF96ED15BEFD3A00587D05 /* questions_and_answers.plist in Resources */,
 				048F36AB15C18F6600FA41EC /* intro.mp3 in Resources */,
@@ -501,6 +505,7 @@
 				048F36F615C18FAF00FA41EC /* s0q8.png in Resources */,
 				048F36F715C18FAF00FA41EC /* s0q9.png in Resources */,
 				048F36F915C196AB00FA41EC /* s2q15.mp3 in Resources */,
+				0479F33415C98DE800BE85AD /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +528,7 @@
 				0493F33C15BDC27B00A6CA86 /* AdminUsersViewController.m in Sources */,
 				0493F33F15BDC29100A6CA86 /* AdminUsersCell.m in Sources */,
 				42AF96F015BF0D8000587D05 /* QuestionsAnswersViewController.m in Sources */,
+				0479F33115C98D0900BE85AD /* MTDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

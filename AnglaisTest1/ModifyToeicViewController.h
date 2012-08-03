@@ -20,5 +20,6 @@
 @property (nonatomic, strong) NSMutableArray *answerCs;
 @property (nonatomic, strong) NSMutableArray *answerDs;
 
-@property (nonatomic, strong) NSArray *sectionsArray;
+@property (nonatomic, strong) NSString *path;
+@property (nonatomic, strong) NSMutableDictionary *dic;
 @end
