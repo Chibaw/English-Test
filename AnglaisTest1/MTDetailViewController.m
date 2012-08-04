@@ -26,6 +26,8 @@
 @synthesize path;
 @synthesize dic;
 @synthesize num;
+@synthesize indexSections;
+@synthesize index;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 indexPath:(NSIndexPath*)indexPath filePath:(NSString*)path fileDic:(NSMutableDictionary*)dic
@@ -49,11 +51,11 @@ indexPath:(NSIndexPath*)indexPath filePath:(NSString*)path fileDic:(NSMutableDic
     
     NSUInteger questionCount = 0;
     NSUInteger countSections = [sectionsArray count];
-    for (NSUInteger indexSections = 0; indexSections < countSections; indexSections++) {
+    for (self.indexSections = 0; indexSections < countSections; indexSections++) {
         
         NSArray *question = [sectionsArray objectAtIndex:indexSections];
         NSUInteger count = [question count];
-        for (NSUInteger index = 0; index < count; index++)
+        for (self.index = 0; index < count; index++)
         {
             if (questionCount == questionReach) {
                 [self.AText setText:[[question objectAtIndex: index] objectForKey: @"A"]];
@@ -80,6 +82,30 @@ indexPath:(NSIndexPath*)indexPath filePath:(NSString*)path fileDic:(NSMutableDic
             questionCount++;
         }
         
+    }
+}
+
+- (void)saveMyData
+{
+    NSLog(@"TRYING TO SAVE DATA\n");
+    NSMutableArray *sectionsArray = [self.dic objectForKey:@"QuestionsAndAnswers"];
+    NSMutableArray *questions = [sectionsArray objectAtIndex:indexSections];
+    NSMutableDictionary *question = [questions objectAtIndex:index];
+    [question setValue:self.questionText.text forKey:@"question"];
+    [question setValue:self.questionText.text forKey:@"answer"];
+    
+    [question setValue:self.questionText.text forKey:@"sound"];
+    [question setValue:self.questionText.text forKey:@"img"];
+    
+    [question setValue:self.questionText.text forKey:@"A"];
+    [question setValue:self.questionText.text forKey:@"B"];
+    [question setValue:self.questionText.text forKey:@"C"];
+    [question setValue:self.questionText.text forKey:@"D"];
+
+    if(self.dic) {
+        [self.dic writeToFile:self.path atomically:YES];
+    } else {
+        NSLog(@"Dictionary is empty omfg...");
     }
 }
 
@@ -110,6 +136,8 @@ indexPath:(NSIndexPath*)indexPath filePath:(NSString*)path fileDic:(NSMutableDic
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
-    return NO;
+    [self saveMyData];
+    [theTextField resignFirstResponder];
+    return YES;
 }
 @end

@@ -28,4 +28,7 @@
 @property (nonatomic, strong) NSString *path;
 @property (nonatomic, strong) NSMutableDictionary *dic;
 @property (nonatomic, strong) NSIndexPath *num;
+
+@property (nonatomic) NSUInteger indexSections;
+@property (nonatomic) NSUInteger index;
 @end
