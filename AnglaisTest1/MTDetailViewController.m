@@ -87,7 +87,6 @@ indexPath:(NSIndexPath*)indexPath filePath:(NSString*)path fileDic:(NSMutableDic
 
 - (void)saveMyData
 {
-    NSLog(@"TRYING TO SAVE DATA\n");
     NSMutableArray *sectionsArray = [self.dic objectForKey:@"QuestionsAndAnswers"];
     NSMutableArray *questions = [sectionsArray objectAtIndex:indexSections];
     NSMutableDictionary *question = [questions objectAtIndex:index];
@@ -101,12 +100,17 @@ indexPath:(NSIndexPath*)indexPath filePath:(NSString*)path fileDic:(NSMutableDic
     [question setValue:self.questionText.text forKey:@"B"];
     [question setValue:self.questionText.text forKey:@"C"];
     [question setValue:self.questionText.text forKey:@"D"];
-
+    
     if(self.dic) {
         [self.dic writeToFile:self.path atomically:YES];
     } else {
         NSLog(@"Dictionary is empty omfg...");
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self saveMyData];
 }
 
 - (void)viewDidUnload
@@ -136,7 +140,6 @@ indexPath:(NSIndexPath*)indexPath filePath:(NSString*)path fileDic:(NSMutableDic
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
-    [self saveMyData];
     [theTextField resignFirstResponder];
     return YES;
 }
