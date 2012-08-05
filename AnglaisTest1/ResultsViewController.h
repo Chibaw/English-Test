@@ -11,7 +11,8 @@
 
 @interface ResultsViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *resultFirstNames;
-@property (nonatomic, strong) NSArray *resultLastNames;
-@property (nonatomic, strong) NSArray *resultGrades;
+@property (nonatomic, strong) NSMutableArray *resultFirstNames;
+@property (nonatomic, strong) NSMutableArray *resultLastNames;
+@property (nonatomic, strong) NSMutableArray *resultMails;
+@property (nonatomic, strong) NSMutableArray *resultGrades;
 @end

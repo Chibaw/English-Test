@@ -19,6 +19,9 @@
 @synthesize userLastNames;
 @synthesize userMails;
 
+@synthesize path;
+@synthesize dic;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -31,28 +34,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.userFirstNames = [[NSArray alloc]
-                             initWithObjects:
-                             @"Thomas",
-                             @"Franck",
-                             @"Julien", nil];
     
-    self.userLastNames = [[NSArray alloc]
-                            initWithObjects:
-                            @"Fraisse",
-                            @"Lavisse",
-                            @"Bordellier", nil];
+    self.path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
+    self.dic = [[NSDictionary alloc] initWithContentsOfFile:self.path];
+    NSArray *sectionsArray = [[NSArray alloc] initWithArray:[self.dic objectForKey:@"Users"]];
+
+    self.userFirstNames = [[NSMutableArray alloc] initWithObjects:nil];
+    self.userLastNames = [[NSMutableArray alloc] initWithObjects:nil];
+    self.userMails = [[NSMutableArray alloc] initWithObjects:nil];
     
-    self.userMails = [[NSArray alloc]
-                         initWithObjects:
-                         @"fraiss_t@epitech.eu",
-                         @"laviss_f@epitech.eu",
-                         @"bordel@epitech.eu", nil];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    for (NSUInteger index = 0; index < [sectionsArray count]; ++index) {
+        [self.userFirstNames addObject:[[sectionsArray objectAtIndex:index] objectForKey:@"firstName"]];
+        [self.userLastNames addObject:[[sectionsArray objectAtIndex:index] objectForKey:@"lastName"]];
+        [self.userMails addObject:[[sectionsArray objectAtIndex:index] objectForKey:@"mail"]];
+    }
 }
 
 - (void)viewDidUnload
@@ -60,6 +55,10 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    [self setUserFirstNames:nil];
+    [self setUserLastNames:nil];
+    [self setUserMails:nil];
+    [self setDic:nil];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

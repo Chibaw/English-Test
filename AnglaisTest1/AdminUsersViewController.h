@@ -11,7 +11,10 @@
 
 @interface AdminUsersViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *userFirstNames;
-@property (nonatomic, strong) NSArray *userLastNames;
-@property (nonatomic, strong) NSArray *userMails;
+@property (nonatomic, strong) NSMutableArray *userFirstNames;
+@property (nonatomic, strong) NSMutableArray *userLastNames;
+@property (nonatomic, strong) NSMutableArray *userMails;
+
+@property (nonatomic, strong) NSString *path;
+@property (nonatomic, strong) NSDictionary *dic;
 @end

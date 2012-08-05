@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *resultFirstName;
 @property (weak, nonatomic) IBOutlet UILabel *resultLastName;
+@property (weak, nonatomic) IBOutlet UILabel *resultMail;
 @property (weak, nonatomic) IBOutlet UILabel *resultGrade;
 @end

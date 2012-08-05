@@ -18,6 +18,7 @@
 @synthesize resultFirstNames;
 @synthesize resultLastNames;
 @synthesize resultGrades;
+@synthesize resultMails;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,26 +32,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.resultFirstNames = [[NSArray alloc]
-                            initWithObjects:
-                            @"Franck",
-                            @"Julien", nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
+    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSArray *sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"Results"]];
     
-    self.resultLastNames = [[NSArray alloc]
-                          initWithObjects:
-                          @"Lavisse",
-                          @"Bordellier", nil];
+    self.resultFirstNames = [[NSMutableArray alloc] initWithObjects:nil];
+    self.resultLastNames = [[NSMutableArray alloc] initWithObjects:nil];
+    self.resultMails = [[NSMutableArray alloc] initWithObjects:nil];
+    self.resultGrades = [[NSMutableArray alloc] initWithObjects:nil];
     
-    self.resultGrades = [[NSArray alloc]
-                            initWithObjects:
-                            @"150",
-                            @"650", nil];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    for (NSUInteger index = 0; index < [sectionsArray count]; ++index) {
+        [self.resultFirstNames addObject:[[sectionsArray objectAtIndex:index] objectForKey:@"firstName"]];
+        [self.resultLastNames addObject:[[sectionsArray objectAtIndex:index] objectForKey:@"lastName"]];
+        [self.resultMails addObject:[[sectionsArray objectAtIndex:index] objectForKey:@"mail"]];
+        [self.resultGrades addObject:[[sectionsArray objectAtIndex:index] objectForKey:@"score"]];
+    }
 }
 
 - (void)viewDidUnload
@@ -58,6 +54,10 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    [self setResultFirstNames:nil];
+    [self setResultLastNames:nil];
+    [self setResultMails:nil];
+    [self setResultGrades:nil];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -85,6 +85,7 @@
 
     cell.resultFirstName.text = [self.resultFirstNames objectAtIndex: [indexPath row]];
     cell.resultLastName.text = [self.resultLastNames objectAtIndex: [indexPath row]];
+    cell.resultMail.text = [self.resultMails objectAtIndex: [indexPath row]];
     cell.resultGrade.text = [self.resultGrades objectAtIndex: [indexPath row]];
     return cell;
 }
