@@ -21,6 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"ipad2.png"]];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
