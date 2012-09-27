@@ -10,5 +10,11 @@
 
 @interface QuestionsAnswersInfoViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UISwitch *validationChecker;
+@property (weak, nonatomic) IBOutlet UITextView *infoSection;
+
+@property (nonatomic) NSInteger section;
+@property (nonatomic, strong) NSDictionary *dic;
+@property (weak, nonatomic) NSMutableString *answers;
+
 - (IBAction)nextQuestions:(id)sender;
 @end

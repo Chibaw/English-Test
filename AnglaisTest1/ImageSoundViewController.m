@@ -1,24 +1,29 @@
-/*
- * ----------------------------------------------------------------------------
- * "THE BEER-WARE LICENSE" (Revision 42):
- * <bordel@epitech.eu> wrote this file. As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return Julien Bordellier
- * ----------------------------------------------------------------------------
- */
+//
+//  ImageSoundViewController.m
+//  AnglaisTest1
+//
+//  Created by Julien Bordellier on 27/09/12.
+//  Copyright (c) 2012 Epitech. All rights reserved.
+//
 
-#import "QuestionsAnswersViewController.h"
+#import "ImageSoundViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
 
-@implementation QuestionsAnswersViewController
+@interface ImageSoundViewController ()
+
+@end
+
+@implementation ImageSoundViewController
+@synthesize section;
+@synthesize it;
 @synthesize answerA;
 @synthesize answerB;
 @synthesize answerC;
-@synthesize it;
-@synthesize dic;
+@synthesize answerD;
 @synthesize player;
-@synthesize section;
-@synthesize sectionNum;
+@synthesize questionText;
+@synthesize ImageView;
+@synthesize dic;
 @synthesize answers;
 @synthesize selectAnswer;
 
@@ -48,13 +53,23 @@
 
 - (void)showNextAnswers
 {
+//    if (questionsArray == nil)
+//        NSLog(@"fail load question array");
     NSDictionary *item = [it nextObject];
     if (item == nil)
         [self nextSection];
+
+    NSString        *path = [[NSBundle mainBundle]
+                             pathForResource:[item objectForKey:@"img"] ofType:nil];
+    UIImage *test = [UIImage imageWithContentsOfFile:path];
+    ImageView.image = test;
+    [ImageView sizeToFit];
+    [questionText setText:[item objectForKey:@"question"]];
     [self playQuestionSound:[item objectForKey:@"sound"]];
     [answerA setText:[item objectForKey:@"A"]];
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
+    [answerD setText:[item objectForKey:@"D"]];
 }
 
 - (void)viewDidLoad
@@ -64,26 +79,25 @@
     it = [questionsArray objectEnumerator];
     [it nextObject];
     [self showNextAnswers];
-    // Do any additional setup after loading the view.
+	// Do any additional setup after loading the view.
 }
 
-- (void)viewDidUnload
+- (void)didReceiveMemoryWarning
 {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidUnload {
+    [self setImageView:nil];
+    [self setQuestionText:nil];
     [self setAnswerA:nil];
     [self setAnswerB:nil];
     [self setAnswerC:nil];
+    [self setAnswerD:nil];
     [self setSelectAnswer:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
-
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return YES;
-}
-
-
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
     NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
@@ -92,12 +106,12 @@
 
 - (void)nextSection
 {
-    [self performSegueWithIdentifier:@"returnTwo" sender:self];
+    [self performSegueWithIdentifier:@"returnOne" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"returnTwo"])
+    if ([[segue identifier] isEqualToString:@"returnOne"])
     {
         QuestionsAnswersInfoViewController *vc = [segue destinationViewController];
         [vc setSection:(self.sectionNum+1)];

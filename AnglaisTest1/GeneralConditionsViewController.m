@@ -8,6 +8,7 @@
  */
 
 #import "GeneralConditionsViewController.h"
+#import "QuestionsAnswersInfoViewController.h"
 
 @interface GeneralConditionsViewController ()
 
@@ -34,6 +35,7 @@
 - (void)viewDidUnload
 {
     [self setValidationChecker:nil];
+    [self setValidationChecker:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -43,9 +45,23 @@
 	return YES;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"StartToeic"])
+    {
+        QuestionsAnswersInfoViewController *infoViewController = [segue destinationViewController];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
+        //sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
+        [infoViewController setDic:[[NSDictionary alloc] initWithContentsOfFile:path]];
+        [infoViewController setSection:0];
+        [infoViewController setAnswers:[[NSMutableString alloc] initWithString:@""]];
+    }
+}
+
 - (IBAction)startToeic:(id)sender {
     if (self.validationChecker.on == TRUE) {
         [self performSegueWithIdentifier:@"StartToeic" sender:self];
     }
 }
+
 @end

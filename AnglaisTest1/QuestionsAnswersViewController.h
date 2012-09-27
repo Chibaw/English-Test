@@ -16,12 +16,14 @@
 - (IBAction)nextQuestion:(id)sender;
 - (void)playQuestionSound:(NSString*)name;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *selectAnswer;
 @property (nonatomic, retain) AVAudioPlayer *player;
-@property (nonatomic) NSArray *questionsArray;
 @property (weak, nonatomic) IBOutlet UITextField *answerA;
 @property (weak, nonatomic) IBOutlet UITextField *answerB;
 @property (weak, nonatomic) IBOutlet UITextField *answerC;
 @property (nonatomic) NSEnumerator *it;
-@property (nonatomic) NSDictionary *dic;
-@property (nonatomic, strong) NSArray *sectionsArray;
+@property (nonatomic, strong) NSDictionary *dic;
+@property (nonatomic, strong) NSArray *section;
+@property (nonatomic) NSInteger sectionNum;
+@property (nonatomic, strong) NSMutableString *answers;
 @end

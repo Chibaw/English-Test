@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="VFO-fR-ihb">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
@@ -74,13 +74,13 @@
                         <outlet property="textFieldFirstName" destination="I6e-sW-qaX" id="wn1-HF-E8j"/>
                         <outlet property="textFieldLastName" destination="fYW-rY-jAU" id="Ta7-TE-UMA"/>
                         <outlet property="textFieldMail" destination="ywO-8h-Ttf" id="Bqe-Jy-pF7"/>
-                        <segue destination="VFO-fR-ihb" kind="modal" identifier="ValidationSucceeded" id="UlH-gb-Jh6"/>
                         <segue destination="aD4-q1-tib" kind="modal" identifier="ValidationSucceededAdmin" id="I7q-ZH-Fyb"/>
+                        <segue destination="VFO-fR-ihb" kind="modal" identifier="ValidationSucceeded" id="U2u-uk-gQA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1633" y="-1816"/>
+            <point key="canvasLocation" x="-1629" y="-1476"/>
         </scene>
         <!--General Conditions View Controller-->
         <scene sceneID="bIh-TG-UMn">
@@ -124,36 +124,33 @@
                                     <action selector="startToeic:" destination="VFO-fR-ihb" eventType="touchUpInside" id="bhv-yN-ssZ"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="A8a-VB-inG">
-                                <rect key="frame" x="224" y="614" width="79" height="27"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="7yu-7y-sfv">
+                                <rect key="frame" x="226" y="614" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="94E-2F-2JP"/>
                     <connections>
-                        <outlet property="validationChecker" destination="A8a-VB-inG" id="1Ii-a1-my9"/>
-                        <segue destination="R3v-JC-5IF" kind="modal" identifier="StartToeic" id="vWt-TW-LHq"/>
+                        <outlet property="validationChecker" destination="7yu-7y-sfv" id="eo4-ib-rhc"/>
+                        <segue destination="R3v-JC-5IF" kind="modal" identifier="StartToeic" id="O3R-e2-1iw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpI-4u-mbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-609" y="-3142"/>
+            <point key="canvasLocation" x="-605" y="-2802"/>
         </scene>
         <!--Questions Answers Info View Controller-->
         <scene sceneID="bQU-qt-O7v">
             <objects>
-                <viewController id="R3v-JC-5IF" customClass="QuestionsAnswersInfoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" id="R3v-JC-5IF" customClass="QuestionsAnswersInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iKj-ni-J0K">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="k7b-Iq-ivE">
-                                <rect key="frame" x="183" y="508" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JX6-Cy-J7F">
-                                <rect key="frame" x="442" y="508" width="143" height="37"/>
+                                <rect key="frame" x="313" y="503" width="143" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Next questions">
@@ -178,19 +175,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wj1-sT-din"/>
                     <connections>
-                        <outlet property="validationChecker" destination="k7b-Iq-ivE" id="fWy-ay-8kC"/>
-                        <segue destination="QkC-Jw-aXn" kind="modal" identifier="QuestionsAnswers" id="0RP-Pj-oWC"/>
+                        <outlet property="infoSection" destination="GbU-2I-Esp" id="3A7-rl-9RS"/>
+                        <segue destination="MBw-8K-Cc0" kind="modal" identifier="toSectionOne" id="4jj-wX-DMr"/>
+                        <segue destination="UXG-W9-icy" kind="modal" identifier="toSectionThree" id="KP4-26-8Ma"/>
+                        <segue destination="QkC-Jw-aXn" kind="modal" identifier="toSectionTwo" id="YjM-xw-Qo2"/>
+                        <segue destination="Wds-Cz-7s6" kind="modal" identifier="toSectionFour" id="suH-Z7-YuL"/>
+                        <segue destination="Wds-Cz-7s6" kind="modal" identifier="toSectionFive" id="XOh-N2-sDW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcO-tg-fUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="-3134"/>
+            <point key="canvasLocation" x="649" y="-2794"/>
         </scene>
         <!--Questions Answers View Controller-->
         <scene sceneID="2Sb-vK-JvV">
             <objects>
-                <viewController id="QkC-Jw-aXn" customClass="QuestionsAnswersViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TypeThreeSection" id="QkC-Jw-aXn" customClass="QuestionsAnswersViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qe2-M6-65P">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -251,11 +253,13 @@
                         <outlet property="answerA" destination="Zj0-US-Cys" id="qpw-bU-tjD"/>
                         <outlet property="answerB" destination="7Hg-KL-gWo" id="PFp-IM-fxe"/>
                         <outlet property="answerC" destination="tmV-ed-oLW" id="f9K-yR-AuD"/>
+                        <outlet property="selectAnswer" destination="Wpi-fL-nRx" id="ael-KZ-qH1"/>
+                        <segue destination="R3v-JC-5IF" kind="modal" identifier="returnTwo" id="AT4-aF-fF8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3u-J1-gHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1925" y="-3134"/>
+            <point key="canvasLocation" x="2661" y="-3942"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="yiQ-pf-5Fl">
@@ -449,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWd-AA-s8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2814" y="-1764"/>
+            <point key="canvasLocation" x="2714" y="-240"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PPG-aM-kHR">
@@ -522,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zog-uu-eh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="-456"/>
+            <point key="canvasLocation" x="431" y="948"/>
         </scene>
         <!--Modify Toeic View Controller-->
         <scene sceneID="2Ru-xa-aN4">
@@ -612,7 +616,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzP-ZW-ddX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1739" y="-1756"/>
+            <point key="canvasLocation" x="1711" y="-240"/>
         </scene>
         <!--Admin Users View Controller-->
         <scene sceneID="bKS-KU-g5N">
@@ -670,7 +674,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86E-MA-pSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711" y="871"/>
+            <point key="canvasLocation" x="1723" y="2555"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="g7z-EY-py4">
@@ -736,7 +740,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEM-CE-kAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="-456"/>
+            <point key="canvasLocation" x="1711" y="948"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vks-km-68l">
@@ -758,7 +762,310 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNC-c9-EEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-583" y="-456"/>
+            <point key="canvasLocation" x="-635" y="948"/>
+        </scene>
+        <!--Image Sound View Controller-->
+        <scene sceneID="Zzr-IF-vDQ">
+            <objects>
+                <viewController storyboardIdentifier="TypeOneSection" id="MBw-8K-Cc0" customClass="ImageSoundViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NbS-BL-9Ly">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Image + Son + Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6CG-k9-uUM">
+                                <rect key="frame" x="288" y="56" width="193" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="uTF-0f-nDb">
+                                <rect key="frame" x="204" y="129" width="360" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="bcQ-vi-6K7">
+                                <rect key="frame" x="20" y="404" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Vkc-EK-Dti">
+                                <rect key="frame" x="20" y="588" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="klz-f6-JnC">
+                                <rect key="frame" x="20" y="474" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="HLX-IA-f1S">
+                                <rect key="frame" x="20" y="512" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="8zg-Mv-99A">
+                                <rect key="frame" x="20" y="550" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="tyL-St-WoG">
+                                <rect key="frame" x="204" y="700" width="360" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="igT-pJ-8Gf">
+                                <rect key="frame" x="310" y="818" width="148" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next question">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="QkC-Jw-aXn" eventType="touchUpInside" id="8cp-lC-4HF"/>
+                                    <action selector="nextQuestion:" destination="MBw-8K-Cc0" eventType="touchUpInside" id="uYY-7w-Xlc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="uTF-0f-nDb" id="7Gv-Vj-d6T"/>
+                        <outlet property="answerA" destination="klz-f6-JnC" id="IXi-ja-9bo"/>
+                        <outlet property="answerB" destination="HLX-IA-f1S" id="G9x-nX-fmW"/>
+                        <outlet property="answerC" destination="8zg-Mv-99A" id="4UM-yi-ZvR"/>
+                        <outlet property="answerD" destination="Vkc-EK-Dti" id="rcn-PB-jwe"/>
+                        <outlet property="questionText" destination="bcQ-vi-6K7" id="xn2-bk-4AM"/>
+                        <outlet property="selectAnswer" destination="tyL-St-WoG" id="iK3-jO-Z40"/>
+                        <segue destination="R3v-JC-5IF" kind="modal" identifier="returnOne" id="tlG-oI-Nay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kx4-6V-clt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223" y="-5066"/>
+        </scene>
+        <!--Empty Question View Controller-->
+        <scene sceneID="t9D-8A-zzb">
+            <objects>
+                <viewController storyboardIdentifier="TypeTwoSection" id="UXG-W9-icy" customClass="EmptyQuestionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkc-e2-r4s">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Questions a trou" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zda-ug-SKs">
+                                <rect key="frame" x="346" y="162" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="quh-Vv-XRy">
+                                <rect key="frame" x="20" y="404" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="oW3-W4-lhG">
+                                <rect key="frame" x="20" y="588" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="37I-CZ-BnQ">
+                                <rect key="frame" x="20" y="474" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="wUE-2a-Tew">
+                                <rect key="frame" x="20" y="512" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="LE1-F0-EG1">
+                                <rect key="frame" x="20" y="550" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="CaM-np-YRe">
+                                <rect key="frame" x="204" y="734" width="360" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gSA-dr-lhz">
+                                <rect key="frame" x="310" y="855" width="148" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next question">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="QkC-Jw-aXn" eventType="touchUpInside" id="Vdg-DP-sRr"/>
+                                    <action selector="nextQuestion:" destination="UXG-W9-icy" eventType="touchUpInside" id="omd-Vb-xWH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerA" destination="37I-CZ-BnQ" id="cdu-2t-Rmh"/>
+                        <outlet property="answerB" destination="wUE-2a-Tew" id="7Y3-U3-CKu"/>
+                        <outlet property="answerC" destination="LE1-F0-EG1" id="0Bk-44-49L"/>
+                        <outlet property="answerD" destination="oW3-W4-lhG" id="YFZ-4r-Wed"/>
+                        <outlet property="questionText" destination="quh-Vv-XRy" id="Lxn-s3-Dt2"/>
+                        <outlet property="selectAnswer" destination="CaM-np-YRe" id="TdC-S0-REg"/>
+                        <segue destination="R3v-JC-5IF" kind="modal" identifier="returnThree" id="ujw-Gv-OTx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaR-ro-Gka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2533" y="-2794"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="BpK-lq-NPu">
+            <objects>
+                <viewController id="pJu-Fs-Mkc" customClass="ScoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qkl-Tb-aiZ">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your Score is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gvy-WP-eG4">
+                                <rect key="frame" x="134" y="148" width="145" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="jl2-zv-pyc">
+                                <rect key="frame" x="287" y="150" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreBox" destination="jl2-zv-pyc" id="c3A-tw-C2q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cME-xQ-r6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4387" y="-2549"/>
+        </scene>
+        <!--Final Questions View Controller-->
+        <scene sceneID="Tx8-ZR-dKm">
+            <objects>
+                <viewController storyboardIdentifier="TypeFourSection" id="Wds-Cz-7s6" customClass="FinalQuestionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iyb-no-E1Y">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Son + Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e3u-vK-68h">
+                                <rect key="frame" x="346" y="162" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="gTx-nw-zUm">
+                                <rect key="frame" x="20" y="404" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="cQG-dM-JSU">
+                                <rect key="frame" x="20" y="588" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Bsx-bA-GjN">
+                                <rect key="frame" x="20" y="474" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Qrm-sN-0tQ">
+                                <rect key="frame" x="20" y="512" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="e2o-ko-8bq">
+                                <rect key="frame" x="20" y="550" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="JrX-XL-Xes">
+                                <rect key="frame" x="204" y="737" width="360" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cvd-nF-YPa">
+                                <rect key="frame" x="310" y="839" width="148" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next question">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="Wds-Cz-7s6" eventType="touchUpInside" id="CSE-xK-2cC"/>
+                                    <action selector="nextQuestion:" destination="QkC-Jw-aXn" eventType="touchUpInside" id="DLr-Vy-h0x"/>
+                                    <action selector="nextQuestion:" destination="UXG-W9-icy" eventType="touchUpInside" id="crB-XT-xok"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20969596039999999" green="0.44066210459999999" blue="0.80882727580000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerA" destination="Bsx-bA-GjN" id="z2q-7V-FMX"/>
+                        <outlet property="answerB" destination="Qrm-sN-0tQ" id="g33-vN-cp0"/>
+                        <outlet property="answerC" destination="e2o-ko-8bq" id="bUK-ca-XqV"/>
+                        <outlet property="answerD" destination="cQG-dM-JSU" id="VNl-pA-IWX"/>
+                        <outlet property="questionText" destination="gTx-nw-zUm" id="OD5-84-kkX"/>
+                        <outlet property="selectAnswer" destination="JrX-XL-Xes" id="Q9c-k3-8a9"/>
+                        <segue destination="R3v-JC-5IF" kind="modal" identifier="returnFour" id="bxZ-fb-uV7"/>
+                        <segue destination="pJu-Fs-Mkc" kind="modal" identifier="returnFinal" id="9Jr-gj-15V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btH-Iz-VzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2839" y="-1572"/>
         </scene>
     </scenes>
     <resources>
@@ -776,6 +1083,18 @@
         <class className="AdminUsersViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AdminUsersViewController.h"/>
         </class>
+        <class className="EmptyQuestionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EmptyQuestionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextQuestion:"/>
+                <relationship kind="outlet" name="answerA" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerB" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerC" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerD" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="questionText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="selectAnswer" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
         <class className="EnglishTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EnglishTestViewController.h"/>
             <relationships>
@@ -785,11 +1104,36 @@
                 <relationship kind="outlet" name="textFieldMail" candidateClass="UITextField"/>
             </relationships>
         </class>
+        <class className="FinalQuestionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FinalQuestionsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextQuestion:"/>
+                <relationship kind="outlet" name="answerA" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerB" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerC" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerD" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="questionText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="selectAnswer" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
         <class className="GeneralConditionsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneralConditionsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="startToeic:"/>
                 <relationship kind="outlet" name="validationChecker" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="ImageSoundViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageSoundViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextQuestion:"/>
+                <relationship kind="outlet" name="ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="answerA" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerB" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerC" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="answerD" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="questionText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="selectAnswer" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
         <class className="MTDetailViewController" superclassName="UIViewController">
@@ -827,6 +1171,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionsAnswersInfoViewController.h"/>
             <relationships>
                 <relationship kind="action" name="nextQuestions:"/>
+                <relationship kind="outlet" name="infoSection" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="validationChecker" candidateClass="UISwitch"/>
             </relationships>
         </class>
@@ -837,6 +1182,7 @@
                 <relationship kind="outlet" name="answerA" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="answerB" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="answerC" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="selectAnswer" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
         <class className="ResultsCell" superclassName="UITableViewCell">
@@ -851,10 +1197,17 @@
         <class className="ResultsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultsViewController.h"/>
         </class>
+        <class className="ScoreViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreViewController.h"/>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="bxZ-fb-uV7"/>
+        <segue reference="suH-Z7-YuL"/>
+    </inferredMetricsTieBreakers>
 </document>

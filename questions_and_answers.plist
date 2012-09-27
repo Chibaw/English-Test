@@ -57,6 +57,24 @@
 		<array>
 			<dict>
 				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string></string>
+				<key>question</key>
+				<string>Directions: You will hear a question and three possible answers. Choose the answer that most closely answers the question and fill in the corresponding oval on your answer form.</string>
+				<key>A</key>
+				<string></string>
+				<key>B</key>
+				<string></string>
+				<key>C</key>
+				<string></string>
+				<key>D</key>
+				<string></string>
+				<key>answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>img</key>
 				<string>s0q0.png</string>
 				<key>sound</key>
 				<string>s0q0.mp3</string>
@@ -533,6 +551,24 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
+				<string>Fill the blanks</string>
+				<key>A</key>
+				<string></string>
+				<key>B</key>
+				<string></string>
+				<key>C</key>
+				<string></string>
+				<key>D</key>
+				<string></string>
+				<key>answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>img</key>
+				<string></string>
+				<key>sound</key>
+				<string></string>
+				<key>question</key>
 				<string>I speak French but ________ English.</string>
 				<key>A</key>
 				<string>I speak not</string>
@@ -698,10 +734,7 @@ Directions: You will hear a short converstation. You will see a question and fou
 				<key>sound</key>
 				<string>s2q0.mp3</string>
 				<key>question</key>
-				<string>M: This should be a fun evening.&lt;br&gt;
-W: Yes, I’ve been looking forward to seeing the play.&lt;br&gt;
-M: The reviews haven’t been that good though.&lt;br&gt;
-What are they going to do?&lt;br&gt;</string>
+				<string>What are they going to do?</string>
 				<key>A</key>
 				<string>Make a phone call.</string>
 				<key>B</key>
@@ -1034,8 +1067,7 @@ Directions: You will hear a short talk. You will see several questions on the ta
 				<key>sound</key>
 				<string>s3q0.mp3</string>
 				<key>question</key>
-				<string>This train makes all stops between Grand Central Station and 125th (one-hundred-twenty-fifth) Street. The express train is across the station. Please step in and watch the closing doors.&lt;br&gt;
-Where was this announcement made?&lt;br&gt;</string>
+				<string>Where was this announcement made?</string>
 				<key>A</key>
 				<string>On a train.</string>
 				<key>B</key>
@@ -1053,8 +1085,7 @@ Where was this announcement made?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q1.mp3</string>
 				<key>question</key>
-				<string>This train makes all stops between Grand Central Station and 125th (one-hundred-twenty-fifth) Street. The express train is across the station. Please step in and watch the closing doors.&lt;br&gt;
-What kind of service is provided?&lt;br&gt;</string>
+				<string>What kind of service is provided?</string>
 				<key>A</key>
 				<string>Express - no stops.</string>
 				<key>B</key>

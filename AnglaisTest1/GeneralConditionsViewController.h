@@ -11,6 +11,7 @@
 
 @interface GeneralConditionsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UISwitch *validationChecker;
+
 - (IBAction)startToeic:(id)sender;
 
 @end

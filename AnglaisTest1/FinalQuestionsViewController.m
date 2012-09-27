@@ -1,24 +1,28 @@
-/*
- * ----------------------------------------------------------------------------
- * "THE BEER-WARE LICENSE" (Revision 42):
- * <bordel@epitech.eu> wrote this file. As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return Julien Bordellier
- * ----------------------------------------------------------------------------
- */
+//
+//  FinalQuestionsViewController.m
+//  AnglaisTest1
+//
+//  Created by Julien Bordellier on 27/09/12.
+//  Copyright (c) 2012 Epitech. All rights reserved.
+//
 
-#import "QuestionsAnswersViewController.h"
+#import "FinalQuestionsViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
+#import "ScoreViewController.h"
+@interface FinalQuestionsViewController ()
 
-@implementation QuestionsAnswersViewController
+@end
+
+@implementation FinalQuestionsViewController
 @synthesize answerA;
 @synthesize answerB;
 @synthesize answerC;
+@synthesize answerD;
+@synthesize questionText;
 @synthesize it;
 @synthesize dic;
-@synthesize player;
 @synthesize section;
-@synthesize sectionNum;
+@synthesize player;
 @synthesize answers;
 @synthesize selectAnswer;
 
@@ -51,10 +55,12 @@
     NSDictionary *item = [it nextObject];
     if (item == nil)
         [self nextSection];
+    [questionText setText:[item objectForKey:@"question"]];
     [self playQuestionSound:[item objectForKey:@"sound"]];
     [answerA setText:[item objectForKey:@"A"]];
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
+    [answerD setText:[item objectForKey:@"D"]];
 }
 
 - (void)viewDidLoad
@@ -64,26 +70,22 @@
     it = [questionsArray objectEnumerator];
     [it nextObject];
     [self showNextAnswers];
-    // Do any additional setup after loading the view.
 }
 
-- (void)viewDidUnload
+- (void)didReceiveMemoryWarning
 {
+    [super didReceiveMemoryWarning];
+}
+
+- (void)viewDidUnload {
+    [self setQuestionText:nil];
     [self setAnswerA:nil];
     [self setAnswerB:nil];
     [self setAnswerC:nil];
+    [self setAnswerD:nil];
     [self setSelectAnswer:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
-
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return YES;
-}
-
-
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
     NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
@@ -92,17 +94,25 @@
 
 - (void)nextSection
 {
-    [self performSegueWithIdentifier:@"returnTwo" sender:self];
+    if (self.sectionNum == 3)
+        [self performSegueWithIdentifier:@"returnFour" sender:self];
+    else if (self.sectionNum == 4)
+        [self performSegueWithIdentifier:@"returnFinal" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"returnTwo"])
+    if ([[segue identifier] isEqualToString:@"returnFour"])
     {
         QuestionsAnswersInfoViewController *vc = [segue destinationViewController];
         [vc setSection:(self.sectionNum+1)];
         [vc setDic:[[NSDictionary alloc] initWithDictionary:dic]];
         [vc setAnswers:answers];
+    }
+    if ([[segue identifier] isEqualToString:@"returnFinal"])
+    {
+        ScoreViewController *vc = [segue destinationViewController];
+        [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
     }
 }
 @end

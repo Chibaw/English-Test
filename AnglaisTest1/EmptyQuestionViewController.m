@@ -1,24 +1,27 @@
-/*
- * ----------------------------------------------------------------------------
- * "THE BEER-WARE LICENSE" (Revision 42):
- * <bordel@epitech.eu> wrote this file. As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return Julien Bordellier
- * ----------------------------------------------------------------------------
- */
+//
+//  EmptyQuestionViewController.m
+//  AnglaisTest1
+//
+//  Created by Julien Bordellier on 27/09/12.
+//  Copyright (c) 2012 Epitech. All rights reserved.
+//
 
-#import "QuestionsAnswersViewController.h"
+#import "EmptyQuestionViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
 
-@implementation QuestionsAnswersViewController
+@interface EmptyQuestionViewController ()
+
+@end
+
+@implementation EmptyQuestionViewController
 @synthesize answerA;
 @synthesize answerB;
 @synthesize answerC;
+@synthesize answerD;
+@synthesize questionText;
 @synthesize it;
 @synthesize dic;
-@synthesize player;
 @synthesize section;
-@synthesize sectionNum;
 @synthesize answers;
 @synthesize selectAnswer;
 
@@ -31,30 +34,16 @@
     return self;
 }
 
-- (void)playQuestionSound:(NSString*)name
-{
-    if (player != nil){
-        [player stop];
-    }
-    NSString        *path = [[NSBundle mainBundle]
-                             pathForResource:name ofType:nil];
-    NSURL           *url = [[NSURL alloc] initFileURLWithPath:path];
-    AVAudioPlayer   *sound = [[AVAudioPlayer alloc]
-                              initWithContentsOfURL:url error:nil];
-    player = sound;
-    [player prepareToPlay];
-    [player play];
-}
-
 - (void)showNextAnswers
 {
     NSDictionary *item = [it nextObject];
     if (item == nil)
         [self nextSection];
-    [self playQuestionSound:[item objectForKey:@"sound"]];
+    [questionText setText:[item objectForKey:@"question"]];
     [answerA setText:[item objectForKey:@"A"]];
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
+    [answerD setText:[item objectForKey:@"D"]];
 }
 
 - (void)viewDidLoad
@@ -64,26 +53,24 @@
     it = [questionsArray objectEnumerator];
     [it nextObject];
     [self showNextAnswers];
-    // Do any additional setup after loading the view.
+	// Do any additional setup after loading the view.
 }
 
-- (void)viewDidUnload
+- (void)didReceiveMemoryWarning
 {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidUnload {
+    [self setQuestionText:nil];
     [self setAnswerA:nil];
     [self setAnswerB:nil];
     [self setAnswerC:nil];
+    [self setAnswerD:nil];
     [self setSelectAnswer:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
-
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return YES;
-}
-
-
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
     NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
@@ -92,12 +79,12 @@
 
 - (void)nextSection
 {
-    [self performSegueWithIdentifier:@"returnTwo" sender:self];
+    [self performSegueWithIdentifier:@"returnThree" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"returnTwo"])
+    if ([[segue identifier] isEqualToString:@"returnThree"])
     {
         QuestionsAnswersInfoViewController *vc = [segue destinationViewController];
         [vc setSection:(self.sectionNum+1)];
