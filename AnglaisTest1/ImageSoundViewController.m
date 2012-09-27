@@ -63,7 +63,7 @@
                              pathForResource:[item objectForKey:@"img"] ofType:nil];
     UIImage *test = [UIImage imageWithContentsOfFile:path];
     ImageView.image = test;
-    [ImageView sizeToFit];
+    //[ImageView sizeToFit];
     [questionText setText:[item objectForKey:@"question"]];
     [self playQuestionSound:[item objectForKey:@"sound"]];
     [answerA setText:[item objectForKey:@"A"]];
