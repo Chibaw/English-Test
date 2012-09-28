@@ -15,6 +15,8 @@
 @implementation ScoreViewController
 @synthesize answers;
 @synthesize scoreBox;
+@synthesize verify;
+@synthesize catSizes;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,15 +30,36 @@
 - (void)getSectionsSizes
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
-    //sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
     NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
-    
+    NSArray *sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
+    verify = [[NSMutableString alloc] initWithString:@""];
+    catSizes = [[NSMutableArray alloc] init];
+    for (int i = 0; i < [sectionsArray count]; ++i) {
+        [catSizes addObject:[NSNumber numberWithInteger:[sectionsArray[i] count]]];
+        for (int j = 0; j < [sectionsArray[i] count]; ++j) {
+            NSDictionary *lol = sectionsArray[i][j];
+            [verify appendString:[lol valueForKey:@"answer"]];
+        }
+    }
+//    NSLog(@"%@", answers);
+//    NSLog(@"%@", verify);
+//    NSLog(@"%@", catSizes);
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [scoreBox setText:answers];
+    [self getSectionsSizes];
+    const char *yay = [answers UTF8String];
+    const char *yayVerified = [verify UTF8String];
+    int score = 0;
+    for (int i = 0; i < [answers length]; ++i) {
+        if (yay[i] == yayVerified[i]) {
+            ++score;
+        }
+    }
+    int finalScore = ((990*score/[answers length]) - (990*score/[answers length])%5);
+    [scoreBox setText:[NSString stringWithFormat:@"%d", finalScore]];
 	// Do any additional setup after loading the view.
 }
 

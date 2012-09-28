@@ -12,5 +12,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *scoreBox;
 
 @property (nonatomic) NSString *answers;
+@property (nonatomic, strong) NSMutableString *verify;
+
+@property (nonatomic, strong) NSMutableArray *catSizes;
 
 @end
