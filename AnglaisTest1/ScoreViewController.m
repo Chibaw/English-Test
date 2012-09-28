@@ -25,6 +25,14 @@
     return self;
 }
 
+- (void)getSectionsSizes
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
+    //sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
+    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
