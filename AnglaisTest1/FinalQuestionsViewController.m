@@ -93,6 +93,10 @@
     [self showNextAnswers];
 }
 
+- (IBAction)replaySound:(id)sender {
+    [player play];
+}
+
 - (void)nextSection
 {
     if (self.sectionNum == 3)

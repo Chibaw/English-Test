@@ -15,6 +15,7 @@
 - (void)showNextAnswers;
 - (IBAction)nextQuestion:(id)sender;
 - (void)playQuestionSound:(NSString*)name;
+- (IBAction)replaySound:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *selectAnswer;
 @property (nonatomic, retain) AVAudioPlayer *player;

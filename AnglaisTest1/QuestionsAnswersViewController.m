@@ -83,6 +83,9 @@
 	return YES;
 }
 
+- (IBAction)replaySound:(id)sender {
+    [player play];
+}
 
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];

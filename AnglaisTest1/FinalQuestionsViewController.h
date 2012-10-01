@@ -26,4 +26,5 @@
 @property (nonatomic, strong) NSMutableString *answers;
 
 - (IBAction)nextQuestion:(id)sender;
+- (IBAction)replaySound:(id)sender;
 @end

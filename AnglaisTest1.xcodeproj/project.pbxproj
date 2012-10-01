@@ -84,7 +84,6 @@
 		0493F34315BDD8F800A6CA86 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0493F34215BDD8F800A6CA86 /* users.plist */; };
 		049EC0641614F050000CF485 /* FinalQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EC0631614F050000CF485 /* FinalQuestionsViewController.m */; };
 		049EC0681615014A000CF485 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EC0671615014A000CF485 /* ScoreViewController.m */; };
-		049EC06C16150A4F000CF485 /* ipad2.png in Resources */ = {isa = PBXBuildFile; fileRef = 049EC06B16150A4F000CF485 /* ipad2.png */; };
 		049EC06E16150B46000CF485 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 049EC06D16150B46000CF485 /* Default-Portrait@2x~ipad.png */; };
 		049EC07016150B52000CF485 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 049EC06F16150B52000CF485 /* Default-Portrait~ipad.png */; };
 		04A7132615BD81A80017CC1C /* ModifyToeicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7132515BD81A80017CC1C /* ModifyToeicViewController.m */; };
@@ -97,6 +96,7 @@
 		04D6F7A815B460DA000F1A1F /* EnglishTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6F7A715B460DA000F1A1F /* EnglishTestViewController.m */; };
 		04DF4D551614E83B0000DF9A /* EmptyQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF4D541614E83B0000DF9A /* EmptyQuestionViewController.m */; };
 		42196DA615C85A410004B1CE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42196DA515C85A410004B1CE /* AVFoundation.framework */; };
+		42358D7116198D50000E211F /* ipad2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42358D7016198D50000E211F /* ipad2.png */; };
 		42AF96ED15BEFD3A00587D05 /* questions_and_answers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AF96EC15BEFD3A00587D05 /* questions_and_answers.plist */; };
 		42AF96F015BF0D8000587D05 /* QuestionsAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AF96EF15BF0D8000587D05 /* QuestionsAnswersViewController.m */; };
 /* End PBXBuildFile section */
@@ -191,7 +191,6 @@
 		049EC0631614F050000CF485 /* FinalQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalQuestionsViewController.m; sourceTree = "<group>"; };
 		049EC06616150149000CF485 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
 		049EC0671615014A000CF485 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
-		049EC06B16150A4F000CF485 /* ipad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ipad2.png; path = ../../Downloads/ipad2.png; sourceTree = "<group>"; };
 		049EC06D16150B46000CF485 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		049EC06F16150B52000CF485 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		04A7132415BD81A80017CC1C /* ModifyToeicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyToeicViewController.h; sourceTree = "<group>"; };
@@ -212,6 +211,7 @@
 		04DF4D531614E83B0000DF9A /* EmptyQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyQuestionViewController.h; sourceTree = "<group>"; };
 		04DF4D541614E83B0000DF9A /* EmptyQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyQuestionViewController.m; sourceTree = "<group>"; };
 		42196DA515C85A410004B1CE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		42358D7016198D50000E211F /* ipad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ipad2.png; path = Assets/ipad2.png; sourceTree = "<group>"; };
 		42AF96EC15BEFD3A00587D05 /* questions_and_answers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions_and_answers.plist; sourceTree = "<group>"; };
 		42AF96EE15BF0D8000587D05 /* QuestionsAnswersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsAnswersViewController.h; sourceTree = "<group>"; };
 		42AF96EF15BF0D8000587D05 /* QuestionsAnswersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsAnswersViewController.m; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 		049A566B15B5735400A1F6E9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				049EC06B16150A4F000CF485 /* ipad2.png */,
+				42358D7016198D50000E211F /* ipad2.png */,
 				048F36E115C18FA600FA41EC /* image */,
 				048F367415C18EA700FA41EC /* audio */,
 				0493F34215BDD8F800A6CA86 /* users.plist */,
@@ -535,9 +535,9 @@
 				048F36F715C18FAF00FA41EC /* s0q9.png in Resources */,
 				048F36F915C196AB00FA41EC /* s2q15.mp3 in Resources */,
 				0479F33415C98DE800BE85AD /* MainStoryboard.storyboard in Resources */,
-				049EC06C16150A4F000CF485 /* ipad2.png in Resources */,
 				049EC06E16150B46000CF485 /* Default-Portrait@2x~ipad.png in Resources */,
 				049EC07016150B52000CF485 /* Default-Portrait~ipad.png in Resources */,
+				42358D7116198D50000E211F /* ipad2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
