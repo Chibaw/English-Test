@@ -8,7 +8,7 @@
  */
 
 #import "ScoreViewController.h"
-
+//#import "SKPSMTPMessage.h"
 @interface ScoreViewController ()
 
 @end
@@ -61,6 +61,7 @@
     }
     int finalScore = ((990*score/[answers length]) - (990*score/[answers length])%5);
     [scoreBox setText:[NSString stringWithFormat:@"%d", finalScore]];
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -74,4 +75,67 @@
     [self setScoreBox:nil];
     [super viewDidUnload];
 }
+
+- (IBAction)goodBye:(id)sender {
+    exit(EXIT_SUCCESS);
+}
+
+//-(void)sendEmail {
+//    //the guts of the message.
+//    SKPSMTPMessage *testMsg = [[SKPSMTPMessage alloc] init];
+//    testMsg.fromEmail = @"ipad.epitech.mpl@gmail.com";
+//    testMsg.toEmail = @"julien.bordellier@epitech.eu";
+//    testMsg.relayHost = @"smtp.gmail.com";
+//    testMsg.requiresAuth = YES;
+//    testMsg.login = @"ipad.epitech.mpl@gmail.com";
+//    testMsg.pass = @"toto42sh";
+//    testMsg.subject = @"This is the email subject line";
+//    testMsg.wantsSecure = YES; // smtp.gmail.com doesn't work without TLS!
+//    
+//    
+//    
+//    // Only do this for self-signed certs!
+//    // testMsg.validateSSLChain = NO;
+//    //testMsg.delegate = self;
+//    
+//    //email contents
+//    NSString * bodyMessage = [NSString stringWithFormat:@"This is the body of the email. You can put anything in here that you want."];
+//    
+//    
+//    NSDictionary *plainPart = [NSDictionary dictionaryWithObjectsAndKeys:@"text/plain",kSKPSMTPPartContentTypeKey,
+//                               bodyMessage ,kSKPSMTPPartMessageKey,@"8bit",kSKPSMTPPartContentTransferEncodingKey,nil];
+//    
+//    testMsg.parts = [NSArray arrayWithObjects:plainPart,nil];
+//    
+//    [testMsg send];
+//    
+//}
+
+//- (void)messageSent:(SKPSMTPMessage *)message
+//{
+//    [message release];
+//    
+//    //message has been successfully sent . you can notify the user of that and remove the wait overlay
+//    [self removeWaitOverlay];
+//    
+//    
+//    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message Sent" message:@"Thanks, we have sent your message"
+//                                                   delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//    [alert show];
+//    [alert release];
+//}
+//
+//- (void)messageFailed:(SKPSMTPMessage *)message error:(NSError *)error
+//{
+//    [message release];
+//    
+//    NSLog(@"delegate - error(%d): %@", [error code], [error localizedDescription]);
+//    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Email Error" message:@"Sending Failed - Unknown Error :-("
+//                                                   delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//    [alert show];
+//    [alert release];
+//}
+
 @end

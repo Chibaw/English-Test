@@ -89,7 +89,7 @@
 }
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
-    NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    NSLog(@"LOL %c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
     [self showNextAnswers];
 }
 

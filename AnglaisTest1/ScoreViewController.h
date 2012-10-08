@@ -17,4 +17,7 @@
 
 @property (nonatomic, strong) NSMutableArray *catSizes;
 
+- (IBAction)goodBye:(id)sender;
+
+//-(void)sendEmail;
 @end

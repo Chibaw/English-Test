@@ -1,0 +1,6 @@
+- premier écran : rédiger le texte (moi) // voir avec thomas
+- deuxième écran : (Directions...) le texte afin qu'il corresponde
+- ne pas avoir de bouton choix (A, B, C, D) déjà en surbrillance apres la premiere question
+- Ajouter un "blip" un bruit au boutons
+- permettre de re-écouter l'audio
+- ajouter le comptage des points + envoi d'un mail à fraiss_t@epitech.eu avec en objet (test result candidat: nom_prenom_result)
