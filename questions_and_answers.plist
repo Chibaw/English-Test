@@ -61,7 +61,7 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string>Directions: You will hear a question and three possible answers. Choose the answer that most closely answers the question and fill in the corresponding oval on your answer form.</string>
+				<string>Directions: You will hear four sentences and have one picture. Choose the answer that most closely describe the image.</string>
 				<key>A</key>
 				<string></string>
 				<key>B</key>
@@ -551,7 +551,7 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string>Fill the blanks</string>
+				<string>Directions: You will have a incomplete sentence. Fill the blanks with the best answer.</string>
 				<key>A</key>
 				<string></string>
 				<key>B</key>
@@ -715,8 +715,7 @@
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string>Short Conversations
-Directions: You will hear a short converstation. You will see a question and four possible answers. Choose the best answer to the question and fill in the corresponding oval on your answer form.</string>
+				<string>Directions: You will hear a short converstation. You will see a question and four possible answers. Choose the best answer to the question and fill in the corresponding oval on your answer form.</string>
 				<key>A</key>
 				<string></string>
 				<key>B</key>
@@ -752,10 +751,7 @@ Directions: You will hear a short converstation. You will see a question and fou
 				<key>sound</key>
 				<string>s2q1.mp3</string>
 				<key>question</key>
-				<string>M: What seems to be the matter with your foream?&lt;br&gt;
-W: I was getting off the bus and I fell down the stairs.&lt;br&gt;
-M: It looks swollen. Let me take an X ray.&lt;br&gt;
-Who are the speakers?&lt;br&gt;</string>
+				<string>Who are the speakers?</string>
 				<key>A</key>
 				<string>A doctor and patient.</string>
 				<key>B</key>
@@ -773,10 +769,7 @@ Who are the speakers?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q2.mp3</string>
 				<key>question</key>
-				<string>M: If we leave now, we can be there at six.&lt;br&gt;
-W: It’s rush hour now. Let’s wait an hour.&lt;br&gt;
-M: Alright, but don’t blame me if we’re late.&lt;br&gt;
-Why does the woman want to wait?&lt;br&gt;</string>
+				<string>Why does the woman want to wait?</string>
 				<key>A</key>
 				<string>She doesn&apos;t want to be early.</string>
 				<key>B</key>
@@ -794,10 +787,7 @@ Why does the woman want to wait?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q3.mp3</string>
 				<key>question</key>
-				<string>M: Oh no! the golf course is covered with snow.&lt;br&gt;
-W: It’s going to snow through the weekend.&lt;br&gt;
-M: I wish my sport were skiing rather than golf.&lt;br&gt;
-What does the man want to do?&lt;br&gt;</string>
+				<string>What does the man want to do?</string>
 				<key>A</key>
 				<string>Play in the snow.</string>
 				<key>B</key>
@@ -815,10 +805,7 @@ What does the man want to do?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q4.mp3</string>
 				<key>question</key>
-				<string>M: Did I have any calls?&lt;br&gt;
-W: Yes - about twenty. I left all the messages in your desk.&lt;br&gt;
-M: Thanks. Would you get me a purchase order form, please?&lt;br&gt;
-Where does this conversation take place?&lt;br&gt;</string>
+				<string>Where does this conversation take place?</string>
 				<key>A</key>
 				<string>On the street.</string>
 				<key>B</key>
@@ -836,10 +823,7 @@ Where does this conversation take place?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q5.mp3</string>
 				<key>question</key>
-				<string>M: Are you too busy to see me sometime next week?&lt;br&gt;
-W: Any day but Wednesday. Would Friday afternoon be OK?&lt;br&gt;
-M: Actually, it’s not. Let’s meet the following week.&lt;br&gt;
-When will they get together?&lt;br&gt;</string>
+				<string>When will they get together?</string>
 				<key>A</key>
 				<string>The week after next.</string>
 				<key>B</key>
@@ -857,10 +841,7 @@ When will they get together?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q6.mp3</string>
 				<key>question</key>
-				<string>M: Last year thirty percent of our budget was spent on advertising.&lt;br&gt;
-W: Was that all in TV advertising?&lt;br&gt;
-M: No, half of it was in print.&lt;br&gt;
-What percentage was spent on advertising?&lt;br&gt;</string>
+				<string>What percentage was spent on advertising?</string>
 				<key>A</key>
 				<string>5%.</string>
 				<key>B</key>
@@ -878,10 +859,7 @@ What percentage was spent on advertising?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q7.mp3</string>
 				<key>question</key>
-				<string>M: I’m really exhausted.&lt;br&gt;
-W: I’ve never worked so hard in my life.&lt;br&gt;
-M: We deserve a bonus for this.&lt;br&gt;
-How do the speakers feel?&lt;br&gt;</string>
+				<string>How do the speakers feel?</string>
 				<key>A</key>
 				<string>Tired.</string>
 				<key>B</key>
@@ -899,10 +877,7 @@ How do the speakers feel?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q8.mp3</string>
 				<key>question</key>
-				<string>M: How many more letters do I have to sign?&lt;br&gt;
-W: There are only a few more and we’ll be finished.&lt;br&gt;
-M: I’m going to need a new pen after this.&lt;br&gt;
-What are the speakers doing?&lt;br&gt;</string>
+				<string>What are the speakers doing?</string>
 				<key>A</key>
 				<string>Signing letters.</string>
 				<key>B</key>
@@ -920,10 +895,7 @@ What are the speakers doing?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q9.mp3</string>
 				<key>question</key>
-				<string>M: I’d like to exchange this shirt, please.&lt;br&gt;
-W: Of course, sir. What would you like instead?&lt;br&gt;
-M: I’d prefer one with long sleeves and in blue.&lt;br&gt;
-Where does this conversation take place?&lt;br&gt;</string>
+				<string>Where does this conversation take place?</string>
 				<key>A</key>
 				<string>At the stock exchange.</string>
 				<key>B</key>
@@ -941,10 +913,7 @@ Where does this conversation take place?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q10.mp3</string>
 				<key>question</key>
-				<string>M: I’m almost finished doing the invoices and the payroll.&lt;br&gt;
-W: I needed the tax statement for this quarter first.&lt;br&gt;
-M: I can’t compute the taxes without the salary information.&lt;br&gt;
-What is the relationship of the speakers?&lt;br&gt;</string>
+				<string>What is the relationship of the speakers?</string>
 				<key>A</key>
 				<string>Singer and conductor.</string>
 				<key>B</key>
@@ -962,10 +931,7 @@ What is the relationship of the speakers?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q11.mp3</string>
 				<key>question</key>
-				<string>M: Are you going to New York or Paris this fall?&lt;br&gt;
-W: Neither. I want to go to some place warmer.&lt;br&gt;
-M: Why don’t you stay home then?&lt;br&gt;
-What does the man suggest the woman do?&lt;br&gt;</string>
+				<string>What does the man suggest the woman do?</string>
 				<key>A</key>
 				<string>Go to warmer place.</string>
 				<key>B</key>
@@ -983,10 +949,7 @@ What does the man suggest the woman do?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q12.mp3</string>
 				<key>question</key>
-				<string>M: I can’t this printer to work. The paper always jams.&lt;br&gt;
-W: Let me see if I can fix it.&lt;br&gt;
-M: Thanks. I really need to get these letters in the mail.&lt;br&gt;
-What does the woman offer to do?&lt;br&gt;</string>
+				<string>What does the woman offer to do?</string>
 				<key>A</key>
 				<string>Fix the printer.</string>
 				<key>B</key>
@@ -1004,10 +967,7 @@ What does the woman offer to do?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q13.mp3</string>
 				<key>question</key>
-				<string>M: Excuse me. But does this bus go to 75th Street?&lt;br&gt;
-W: No. This one turns at 57th. You need the M5 bus.&lt;br&gt;
-M: I’ve waited long enough for this one. I think I’ll just walk.&lt;br&gt;
-What did the man decide to do?&lt;br&gt;</string>
+				<string>What did the man decide to do?</string>
 				<key>A</key>
 				<string>Take another bus.</string>
 				<key>B</key>
@@ -1025,10 +985,7 @@ What did the man decide to do?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s2q14.mp3</string>
 				<key>question</key>
-				<string>M: Did you see that bird?&lt;br&gt;
-W: No, what kind was it?&lt;br&gt;
-M: I don’t know, but it flew by really fast.&lt;br&gt;
-What did the man see?&lt;br&gt;</string>
+				<string>What did the man see?</string>
 				<key>A</key>
 				<string>Someone with the flu.</string>
 				<key>B</key>
@@ -1048,8 +1005,7 @@ What did the man see?&lt;br&gt;</string>
 				<key>sound</key>
 				<string></string>
 				<key>question</key>
-				<string>Short Talks 
-Directions: You will hear a short talk. You will see several questions on the talk and four possible answers. Choose the best answer to the question and fill in the corresponding oval on your answer form.</string>
+				<string>Directions: You will hear a short talk. You will see several questions on the talk and four possible answers. Choose the best answer to the question and fill in the corresponding oval on your answer form.</string>
 				<key>A</key>
 				<string></string>
 				<key>B</key>
@@ -1103,8 +1059,7 @@ Directions: You will hear a short talk. You will see several questions on the ta
 				<key>sound</key>
 				<string>s3q2.mp3</string>
 				<key>question</key>
-				<string>At six AM the temperature at National Airport is 53 degrees. Today’s forecast calls for rain early in the morning with skies clearing by noon. The rest of the day will be seasonably mild with winds developing in the evening.&lt;br&gt;
-What should people take to work in the morning?&lt;br&gt;</string>
+				<string>What should people take to work in the morning?</string>
 				<key>A</key>
 				<string>Snow boots.</string>
 				<key>B</key>
@@ -1122,8 +1077,7 @@ What should people take to work in the morning?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q3.mp3</string>
 				<key>question</key>
-				<string>At six AM the temperature at National Airport is 53 degrees. Today’s forecast calls for rain early in the morning with skies clearing by noon. The rest of the day will be seasonably mild with winds developing in the evening.&lt;br&gt;
-When will the weather clear up?&lt;br&gt;</string>
+				<string>When will the weather clear up?</string>
 				<key>A</key>
 				<string>By 6:00 AM.</string>
 				<key>B</key>
@@ -1141,8 +1095,7 @@ When will the weather clear up?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q4.mp3</string>
 				<key>question</key>
-				<string>Due to the extremely hot weather, the electric company is planning to turn off power in certain districts during the day. This will reduce the total demand for electricity and prevent a city-wide shutdown of electrical services. Power will not be out longer than two hours in your area.&lt;br&gt;
-Why is power being turn off?&lt;br&gt;</string>
+				<string>Why is power being turn off?</string>
 				<key>A</key>
 				<string>To reduce total demand.</string>
 				<key>B</key>
@@ -1160,8 +1113,7 @@ Why is power being turn off?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q5.mp3</string>
 				<key>question</key>
-				<string>Due to the extremely hot weather, the electric company is planning to turn off power in certain districts during the day. This will reduce the total demand for electricity and prevent a city-wide shutdown of electrical services. Power will not be out longer than two hours in your area.&lt;br&gt;
-How long will power be off?&lt;br&gt;</string>
+				<string>How long will power be off?</string>
 				<key>A</key>
 				<string>Longer than two hours.</string>
 				<key>B</key>
@@ -1179,8 +1131,7 @@ How long will power be off?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q6.mp3</string>
 				<key>question</key>
-				<string>Good morning, ladies and gentlemen. This is your cruise director speaking. It’s 7:30 and it’s a beautiful day at sea. We have a lot planned for you both on ship and on shore. The first shore excursion will depart from the Main Deck at 9 AM. Anyone wishing to go ashore at this time should report to the lounge for a ticket. Enjoy your breakfast.&lt;br&gt;
-Where does this announcement take place?&lt;br&gt;</string>
+				<string>Where does this announcement take place?</string>
 				<key>A</key>
 				<string>On a tour bus.</string>
 				<key>B</key>
@@ -1198,8 +1149,7 @@ Where does this announcement take place?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q7.mp3</string>
 				<key>question</key>
-				<string>Good morning, ladies and gentlemen. This is your cruise director speaking. It’s 7:30 and it’s a beautiful day at sea. We have a lot planned for you both on ship and on shore. The first shore excursion will depart from the Main Deck at 9 AM. Anyone wishing to go ashore at this time should report to the lounge for a ticket. Enjoy your breakfast.&lt;br&gt;
-What is required for the first excursion?&lt;br&gt;</string>
+				<string>What is required for the first excursion?</string>
 				<key>A</key>
 				<string>A hearty breakfast.</string>
 				<key>B</key>
@@ -1217,8 +1167,7 @@ What is required for the first excursion?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q8.mp3</string>
 				<key>question</key>
-				<string>Are you tired of getting up to turn off the television? Tired of getting up to turn down the radio? Turn on the video recorder? Our new remote control will let you operate any electronic appliance in your home from a comfortable chair. Call our toll-free number for more information. No sales personnel will call your home.&lt;br&gt;
-What is being offered?&lt;br&gt;</string>
+				<string>What is being offered?</string>
 				<key>A</key>
 				<string>A television.</string>
 				<key>B</key>
@@ -1236,8 +1185,7 @@ What is being offered?&lt;br&gt;</string>
 				<key>sound</key>
 				<string>s3q8.mp3</string>
 				<key>question</key>
-				<string>Are you tired of getting up to turn off the television? Tired of getting up to turn down the radio? Turn on the video recorder? Our new remote control will let you operate any electronic appliance in your home from a comfortable chair. Call our toll-free number for more information. No sales personnel will call your home.&lt;br&gt;
-How can a consumer learn more?&lt;br&gt;</string>
+				<string>How can a consumer learn more?</string>
 				<key>A</key>
 				<string>Have a salesperson call at home.</string>
 				<key>B</key>

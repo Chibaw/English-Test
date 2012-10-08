@@ -71,6 +71,7 @@
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
     [answerD setText:[item objectForKey:@"D"]];
+    [selectAnswer setSelectedSegmentIndex:-1];
 }
 
 - (void)viewDidLoad
