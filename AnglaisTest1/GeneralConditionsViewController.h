@@ -12,6 +12,10 @@
 @interface GeneralConditionsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UISwitch *validationChecker;
 
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *lastName;
+@property (nonatomic) NSString *mail;
+
 - (IBAction)startToeic:(id)sender;
 
 @end

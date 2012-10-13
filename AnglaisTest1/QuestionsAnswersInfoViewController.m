@@ -11,6 +11,7 @@
 #import "ImageSoundViewController.h"
 #import "QuestionsAnswersViewController.h"
 #import "EmptyQuestionViewController.h"
+#import "FinalQuestionsViewController.h"
 
 @interface QuestionsAnswersInfoViewController ()
 
@@ -22,6 +23,10 @@
 @synthesize dic;
 @synthesize section;
 @synthesize answers;
+
+@synthesize name;
+@synthesize lastName;
+@synthesize mail;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,34 +70,50 @@
         [vc setSectionNum:section];
         [vc setDic:dic];
         [vc setAnswers:[[NSMutableString alloc] initWithString:@""]];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
     } else if ([[segue identifier] isEqualToString:@"toSectionTwo"]) {
         QuestionsAnswersViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
         [vc setSectionNum:section];
         [vc setDic:dic];
         [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
     } else if ([[segue identifier] isEqualToString:@"toSectionThree"]) {
         EmptyQuestionViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
         [vc setSectionNum:section];
         [vc setDic:dic];
         [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
     } else if ([[segue identifier] isEqualToString:@"toSectionFour"]) {
-        QuestionsAnswersViewController *vc = [segue destinationViewController];
+        FinalQuestionsViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
         [vc setSectionNum:section];
         [vc setDic:dic];
         [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
+        [vc setName:[[NSMutableString alloc] initWithString:name]];
+        [vc setLastName:[[NSMutableString alloc] initWithString:lastName]];
+        [vc setMail:[[NSMutableString alloc] initWithString:mail]];
     } else if ([[segue identifier] isEqualToString:@"toSectionFive"]) {
-        QuestionsAnswersViewController *vc = [segue destinationViewController];
+        FinalQuestionsViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
         [vc setSectionNum:section];
         [vc setDic:dic];
         [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
+        [vc setName:[[NSMutableString alloc] initWithString:name]];
+        [vc setLastName:[[NSMutableString alloc] initWithString:lastName]];
+        [vc setMail:[[NSMutableString alloc] initWithString:mail]];
     }
 }
 
 - (IBAction)nextQuestions:(id)sender {
+    NSLog(@"%@", name);
     if (section == 0) {
         [self performSegueWithIdentifier:@"toSectionOne" sender:self];
     } else if (section == 1) {

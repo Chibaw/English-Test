@@ -17,6 +17,10 @@
 @implementation GeneralConditionsViewController
 @synthesize validationChecker;
 
+@synthesize name;
+@synthesize lastName;
+@synthesize mail;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -55,6 +59,9 @@
         [infoViewController setDic:[[NSDictionary alloc] initWithContentsOfFile:path]];
         [infoViewController setSection:0];
         [infoViewController setAnswers:[[NSMutableString alloc] initWithString:@""]];
+        [infoViewController setName:name];
+        [infoViewController setLastName:lastName];
+        [infoViewController setMail:mail];
     }
 }
 

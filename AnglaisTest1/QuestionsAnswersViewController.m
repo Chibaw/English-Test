@@ -22,6 +22,10 @@
 @synthesize answers;
 @synthesize selectAnswer;
 
+@synthesize name;
+@synthesize lastName;
+@synthesize mail;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -106,6 +110,9 @@
         [vc setSection:(self.sectionNum+1)];
         [vc setDic:[[NSDictionary alloc] initWithDictionary:dic]];
         [vc setAnswers:answers];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
     }
 }
 @end

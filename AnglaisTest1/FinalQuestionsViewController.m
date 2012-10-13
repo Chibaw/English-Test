@@ -24,8 +24,12 @@
 @synthesize dic;
 @synthesize section;
 @synthesize player;
-@synthesize answers;
 @synthesize selectAnswer;
+
+@synthesize answers;
+@synthesize name;
+@synthesize lastName;
+@synthesize mail;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,13 +40,13 @@
     return self;
 }
 
-- (void)playQuestionSound:(NSString*)name
+- (void)playQuestionSound:(NSString*)filename
 {
     if (player != nil){
         [player stop];
     }
     NSString        *path = [[NSBundle mainBundle]
-                             pathForResource:name ofType:nil];
+                             pathForResource:filename ofType:nil];
     NSURL           *url = [[NSURL alloc] initFileURLWithPath:path];
     AVAudioPlayer   *sound = [[AVAudioPlayer alloc]
                               initWithContentsOfURL:url error:nil];
@@ -113,11 +117,17 @@
         [vc setSection:(self.sectionNum+1)];
         [vc setDic:[[NSDictionary alloc] initWithDictionary:dic]];
         [vc setAnswers:answers];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
     }
     if ([[segue identifier] isEqualToString:@"returnFinal"])
     {
         ScoreViewController *vc = [segue destinationViewController];
         [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
     }
 }
 @end

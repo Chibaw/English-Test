@@ -8,6 +8,7 @@
  */
 
 #import "EnglishTestViewController.h"
+#import "GeneralConditionsViewController.h"
 
 @interface EnglishTestViewController ()
 
@@ -90,6 +91,16 @@
     return FALSE;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ValidationSucceeded"])
+    {
+        GeneralConditionsViewController *generalConditions = [segue destinationViewController];
+        [generalConditions setName:textFieldFirstName.text];
+        [generalConditions setLastName:textFieldLastName.text];
+        [generalConditions setMail:textFieldMail.text];
+    }
+}
 
 - (IBAction)buttonStart:(id)sender {
     

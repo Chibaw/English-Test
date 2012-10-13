@@ -17,5 +17,9 @@
 @property (nonatomic, strong) NSDictionary *dic;
 @property (weak, nonatomic) NSMutableString *answers;
 
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *lastName;
+@property (nonatomic) NSString *mail;
+
 - (IBAction)nextQuestions:(id)sender;
 @end

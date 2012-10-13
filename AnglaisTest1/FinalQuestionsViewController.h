@@ -23,7 +23,11 @@
 @property (nonatomic, strong) NSDictionary *dic;
 @property (nonatomic, retain) AVAudioPlayer *player;
 @property (nonatomic) NSEnumerator *it;
+
 @property (nonatomic, strong) NSMutableString *answers;
+@property (nonatomic, strong) NSMutableString *name;
+@property (nonatomic, strong) NSMutableString *lastName;
+@property (nonatomic, strong) NSMutableString *mail;
 
 - (IBAction)nextQuestion:(id)sender;
 - (IBAction)replaySound:(id)sender;

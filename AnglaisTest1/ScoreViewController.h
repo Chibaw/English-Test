@@ -13,11 +13,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *scoreBox;
 
 @property (nonatomic) NSString *answers;
-@property (nonatomic, strong) NSMutableString *verify;
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *lastName;
+@property (nonatomic) NSString *mail;
 
+@property (nonatomic) NSInteger finalScore;
+
+@property (nonatomic, strong) NSMutableString *verify;
 @property (nonatomic, strong) NSMutableArray *catSizes;
 
 - (IBAction)goodBye:(id)sender;
-
-//-(void)sendEmail;
+- (void)sendServer;
 @end

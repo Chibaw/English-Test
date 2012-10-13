@@ -27,4 +27,8 @@
 @property (nonatomic, strong) NSArray *section;
 @property (nonatomic) NSInteger sectionNum;
 @property (nonatomic, strong) NSMutableString *answers;
+
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *lastName;
+@property (nonatomic) NSString *mail;
 @end

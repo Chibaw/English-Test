@@ -26,6 +26,10 @@
 @property (nonatomic, strong) NSDictionary *dic;
 @property (nonatomic, strong) NSMutableString *answers;
 
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *lastName;
+@property (nonatomic) NSString *mail;
+
 - (IBAction)nextQuestion:(id)sender;
 - (IBAction)replaySound:(id)sender;
 

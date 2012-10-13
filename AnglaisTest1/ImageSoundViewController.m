@@ -28,6 +28,10 @@
 @synthesize answers;
 @synthesize selectAnswer;
 
+@synthesize name;
+@synthesize lastName;
+@synthesize mail;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -98,9 +102,11 @@
     [self setAnswerC:nil];
     [self setAnswerD:nil];
     [self setSelectAnswer:nil];
+    [self setPlayer:nil];
     [super viewDidUnload];
 }
 - (IBAction)nextQuestion:(id)sender {
+    //[self playQuestionSound:[item objectForKey:@"sound"]];
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
     NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
     [self showNextAnswers];
@@ -123,6 +129,9 @@
         [vc setSection:(self.sectionNum+1)];
         [vc setDic:[[NSDictionary alloc] initWithDictionary:dic]];
         [vc setAnswers:answers];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
     }
 }
 @end

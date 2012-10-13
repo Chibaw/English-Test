@@ -1,3 +1,5 @@
 - premier écran : rédiger le texte (moi) // voir avec thomas
 - Ajouter un "blip" un bruit au boutons
-- ajouter le comptage des points + envoi d'un mail à fraiss_t@epitech.eu avec en objet (test result candidat nom_prenom_result)
+//- ajouter le comptage des points + envoi d'un mail à fraiss_t@epitech.eu avec en objet (test result candidat nom_prenom_result)
+    => utilisation d'un script php sur le serveur de l'ecole pour sauvegarder dans un fichier le score
+- modifier le script php pour l'envois de mail ? => voir avec TF

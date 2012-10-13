@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldMail;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldLastName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFirstName;
+
 - (IBAction)buttonStart:(id)sender;
 - (BOOL)ValidationSuccessful;
 - (BOOL)isAdminInUserDatabase;

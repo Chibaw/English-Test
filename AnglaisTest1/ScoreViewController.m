@@ -18,6 +18,11 @@
 @synthesize scoreBox;
 @synthesize verify;
 @synthesize catSizes;
+@synthesize finalScore;
+
+@synthesize name;
+@synthesize lastName;
+@synthesize mail;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,9 +47,6 @@
             [verify appendString:[lol valueForKey:@"answer"]];
         }
     }
-//    NSLog(@"%@", answers);
-//    NSLog(@"%@", verify);
-//    NSLog(@"%@", catSizes);
 }
 
 - (void)viewDidLoad
@@ -59,10 +61,9 @@
             ++score;
         }
     }
-    int finalScore = ((990*score/[answers length]) - (990*score/[answers length])%5);
+    finalScore = ((990*score/[answers length]) - (990*score/[answers length])%5);
     [scoreBox setText:[NSString stringWithFormat:@"%d", finalScore]];
-    
-	// Do any additional setup after loading the view.
+    [self sendServer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,62 +81,23 @@
     exit(EXIT_SUCCESS);
 }
 
-//-(void)sendEmail {
-//    //the guts of the message.
-//    SKPSMTPMessage *testMsg = [[SKPSMTPMessage alloc] init];
-//    testMsg.fromEmail = @"ipad.epitech.mpl@gmail.com";
-//    testMsg.toEmail = @"julien.bordellier@epitech.eu";
-//    testMsg.relayHost = @"smtp.gmail.com";
-//    testMsg.requiresAuth = YES;
-//    testMsg.login = @"ipad.epitech.mpl@gmail.com";
-//    testMsg.pass = @"toto42sh";
-//    testMsg.subject = @"This is the email subject line";
-//    testMsg.wantsSecure = YES; // smtp.gmail.com doesn't work without TLS!
-//    
-//    
-//    
-//    // Only do this for self-signed certs!
-//    // testMsg.validateSSLChain = NO;
-//    //testMsg.delegate = self;
-//    
-//    //email contents
-//    NSString * bodyMessage = [NSString stringWithFormat:@"This is the body of the email. You can put anything in here that you want."];
-//    
-//    
-//    NSDictionary *plainPart = [NSDictionary dictionaryWithObjectsAndKeys:@"text/plain",kSKPSMTPPartContentTypeKey,
-//                               bodyMessage ,kSKPSMTPPartMessageKey,@"8bit",kSKPSMTPPartContentTransferEncodingKey,nil];
-//    
-//    testMsg.parts = [NSArray arrayWithObjects:plainPart,nil];
-//    
-//    [testMsg send];
-//    
-//}
-
-//- (void)messageSent:(SKPSMTPMessage *)message
-//{
-//    [message release];
-//    
-//    //message has been successfully sent . you can notify the user of that and remove the wait overlay
-//    [self removeWaitOverlay];
-//    
-//    
-//    
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message Sent" message:@"Thanks, we have sent your message"
-//                                                   delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-//    [alert show];
-//    [alert release];
-//}
-//
-//- (void)messageFailed:(SKPSMTPMessage *)message error:(NSError *)error
-//{
-//    [message release];
-//    
-//    NSLog(@"delegate - error(%d): %@", [error code], [error localizedDescription]);
-//    
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Email Error" message:@"Sending Failed - Unknown Error :-("
-//                                                   delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-//    [alert show];
-//    [alert release];
-//}
-
+- (void)sendServer {
+    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:@"http://localhost/test/test.php?"];
+    [finalUrl appendString:@"name="];
+    [finalUrl appendString:name];
+    [finalUrl appendString:@"&lastName="];
+    [finalUrl appendString:lastName];
+    [finalUrl appendString:@"&mail="];
+    [finalUrl appendString:mail];
+    [finalUrl appendString:@"&score="];
+    [finalUrl appendString:[[NSString alloc] initWithFormat:@"%d", finalScore]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:finalUrl]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                                       timeoutInterval:10];
+    
+    [request setHTTPMethod: @"GET"];
+    NSError *requestError;
+    NSURLResponse *urlResponse = nil;
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+}
 @end
