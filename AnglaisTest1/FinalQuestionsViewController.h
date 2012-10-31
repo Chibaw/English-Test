@@ -9,6 +9,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
+#import "Config.h"
 
 @interface FinalQuestionsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *questionText;
@@ -28,6 +29,7 @@
 @property (nonatomic, strong) NSMutableString *name;
 @property (nonatomic, strong) NSMutableString *lastName;
 @property (nonatomic, strong) NSMutableString *mail;
+@property (nonatomic) NSDate   *startDate;
 
 - (IBAction)nextQuestion:(id)sender;
 - (IBAction)replaySound:(id)sender;

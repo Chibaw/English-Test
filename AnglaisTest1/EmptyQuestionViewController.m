@@ -9,6 +9,7 @@
 
 #import "EmptyQuestionViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
+#import "ScoreViewController.h"
 
 @interface EmptyQuestionViewController ()
 
@@ -25,6 +26,7 @@
 @synthesize section;
 @synthesize answers;
 @synthesize selectAnswer;
+@synthesize startDate;
 
 @synthesize name;
 @synthesize lastName;
@@ -49,6 +51,7 @@
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
     [answerD setText:[item objectForKey:@"D"]];
+    [selectAnswer setSelectedSegmentIndex:-1];
 }
 
 - (void)viewDidLoad
@@ -78,7 +81,11 @@
 }
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
-    NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    //NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    if (([startDate timeIntervalSinceNow]*-1) > MAX_TIME*60) {
+        [self performSegueWithIdentifier:@"returnScore3" sender:self];
+
+    }
     [self showNextAnswers];
 }
 
@@ -95,6 +102,13 @@
         [vc setSection:(self.sectionNum+1)];
         [vc setDic:[[NSDictionary alloc] initWithDictionary:dic]];
         [vc setAnswers:answers];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
+    } else if ([[segue identifier] isEqualToString:@"returnScore3"]) {
+        ScoreViewController *vc = [segue destinationViewController];
+        [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
         [vc setName:[[NSString alloc] initWithString:name]];
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];

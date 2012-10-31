@@ -10,6 +10,7 @@
 #import "FinalQuestionsViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
 #import "ScoreViewController.h"
+
 @interface FinalQuestionsViewController ()
 
 @end
@@ -25,6 +26,7 @@
 @synthesize section;
 @synthesize player;
 @synthesize selectAnswer;
+@synthesize startDate;
 
 @synthesize answers;
 @synthesize name;
@@ -66,11 +68,14 @@
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
     [answerD setText:[item objectForKey:@"D"]];
+    [selectAnswer setSelectedSegmentIndex:-1];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if (self.sectionNum == 4)
+        [self nextSection];
     NSArray *questionsArray = [section objectAtIndex:self.sectionNum];
     it = [questionsArray objectEnumerator];
     [it nextObject];
@@ -93,7 +98,10 @@
 }
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
-    NSLog(@"LOL %c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    //NSLog(@"LOL %c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    if (([startDate timeIntervalSinceNow]*-1) > MAX_TIME*60) {
+        [self performSegueWithIdentifier:@"returnFinal" sender:self];
+    }
     [self showNextAnswers];
 }
 
@@ -120,6 +128,7 @@
         [vc setName:[[NSString alloc] initWithString:name]];
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
     }
     if ([[segue identifier] isEqualToString:@"returnFinal"])
     {

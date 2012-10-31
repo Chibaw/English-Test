@@ -9,6 +9,7 @@
 
 #import "QuestionsAnswersViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
+#import "ScoreViewController.h"
 
 @implementation QuestionsAnswersViewController
 @synthesize answerA;
@@ -21,6 +22,7 @@
 @synthesize sectionNum;
 @synthesize answers;
 @synthesize selectAnswer;
+@synthesize startDate;
 
 @synthesize name;
 @synthesize lastName;
@@ -35,13 +37,13 @@
     return self;
 }
 
-- (void)playQuestionSound:(NSString*)name
+- (void)playQuestionSound:(NSString*)nameSound
 {
     if (player != nil){
         [player stop];
     }
     NSString        *path = [[NSBundle mainBundle]
-                             pathForResource:name ofType:nil];
+                             pathForResource:nameSound ofType:nil];
     NSURL           *url = [[NSURL alloc] initFileURLWithPath:path];
     AVAudioPlayer   *sound = [[AVAudioPlayer alloc]
                               initWithContentsOfURL:url error:nil];
@@ -59,6 +61,7 @@
     [answerA setText:[item objectForKey:@"A"]];
     [answerB setText:[item objectForKey:@"B"]];
     [answerC setText:[item objectForKey:@"C"]];
+    [selectAnswer setSelectedSegmentIndex:-1];
 }
 
 - (void)viewDidLoad
@@ -93,7 +96,10 @@
 
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
-    NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    //NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    if (([startDate timeIntervalSinceNow]*-1) > MAX_TIME*60) {
+        [self performSegueWithIdentifier:@"returnScore2" sender:self];
+    }
     [self showNextAnswers];
 }
 
@@ -110,6 +116,13 @@
         [vc setSection:(self.sectionNum+1)];
         [vc setDic:[[NSDictionary alloc] initWithDictionary:dic]];
         [vc setAnswers:answers];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
+    } else if ([[segue identifier] isEqualToString:@"returnScore2"]) {
+        ScoreViewController *vc = [segue destinationViewController];
+        [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
         [vc setName:[[NSString alloc] initWithString:name]];
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];

@@ -16,6 +16,7 @@
 
 @implementation GeneralConditionsViewController
 @synthesize validationChecker;
+@synthesize player;
 
 @synthesize name;
 @synthesize lastName;
@@ -32,12 +33,20 @@
 
 - (void)viewDidLoad
 {
+    NSString        *path = [[NSBundle mainBundle]
+                             pathForResource:@"test_son.mp3" ofType:nil];
+    NSURL           *url = [[NSURL alloc] initFileURLWithPath:path];
+    player = [[AVAudioPlayer alloc]
+              initWithContentsOfURL:url error:nil];
+    [player prepareToPlay];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
+    [player stop];
+    [self setPlayer:nil];
     [self setValidationChecker:nil];
     [self setValidationChecker:nil];
     [super viewDidUnload];
@@ -62,12 +71,24 @@
         [infoViewController setName:name];
         [infoViewController setLastName:lastName];
         [infoViewController setMail:mail];
+        [infoViewController setStartDate:[[NSDate alloc] init]];
     }
 }
 
 - (IBAction)startToeic:(id)sender {
     if (self.validationChecker.on == TRUE) {
+        [player stop];
         [self performSegueWithIdentifier:@"StartToeic" sender:self];
+    }
+}
+
+- (IBAction)SoundText:(id)sender {
+    if (player != nil){
+        if ([player isPlaying] == YES) {
+            [player stop];
+        } else {
+            [player play];
+        }
     }
 }
 

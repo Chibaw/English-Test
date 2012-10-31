@@ -20,6 +20,7 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *lastName;
 @property (nonatomic) NSString *mail;
+@property (nonatomic) NSDate   *startDate;
 
 - (IBAction)nextQuestions:(id)sender;
 @end

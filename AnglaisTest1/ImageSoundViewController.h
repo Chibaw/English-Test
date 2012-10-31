@@ -9,6 +9,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
+#import "Config.h"
 
 @interface ImageSoundViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *ImageView;
@@ -29,6 +30,7 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *lastName;
 @property (nonatomic) NSString *mail;
+@property (nonatomic) NSDate   *startDate;
 
 - (IBAction)nextQuestion:(id)sender;
 - (IBAction)replaySound:(id)sender;

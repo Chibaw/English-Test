@@ -8,6 +8,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "Config.h"
 
 @interface EmptyQuestionViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *questionText;
@@ -26,6 +27,7 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *lastName;
 @property (nonatomic) NSString *mail;
+@property (nonatomic) NSDate   *startDate;
 
 - (IBAction)nextQuestion:(id)sender;
 @end

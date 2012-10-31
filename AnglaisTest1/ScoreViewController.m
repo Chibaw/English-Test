@@ -61,7 +61,7 @@
             ++score;
         }
     }
-    finalScore = ((990*score/[answers length]) - (990*score/[answers length])%5);
+    finalScore = ((990*score/[verify length]) - (990*score/[answers length])%5);
     [scoreBox setText:[NSString stringWithFormat:@"%d", finalScore]];
     [self sendServer];
 }
@@ -82,7 +82,7 @@
 }
 
 - (void)sendServer {
-    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:@"http://localhost/test/test.php?"];
+    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:@"http://vks16004.ip-176-31-165.eu/toeic_result.php?"];
     [finalUrl appendString:@"name="];
     [finalUrl appendString:name];
     [finalUrl appendString:@"&lastName="];

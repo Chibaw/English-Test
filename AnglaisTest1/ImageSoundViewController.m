@@ -9,6 +9,7 @@
 
 #import "ImageSoundViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
+#import "ScoreViewController.h"
 
 @interface ImageSoundViewController ()
 
@@ -27,6 +28,7 @@
 @synthesize dic;
 @synthesize answers;
 @synthesize selectAnswer;
+@synthesize startDate;
 
 @synthesize name;
 @synthesize lastName;
@@ -41,13 +43,13 @@
     return self;
 }
 
-- (void)playQuestionSound:(NSString*)name
+- (void)playQuestionSound:(NSString*)nameSound
 {
     if (player != nil){
         [player stop];
     }
     NSString        *path = [[NSBundle mainBundle]
-                             pathForResource:name ofType:nil];
+                             pathForResource:nameSound ofType:nil];
     NSURL           *url = [[NSURL alloc] initFileURLWithPath:path];
     AVAudioPlayer   *sound = [[AVAudioPlayer alloc]
                               initWithContentsOfURL:url error:nil];
@@ -108,7 +110,11 @@
 - (IBAction)nextQuestion:(id)sender {
     //[self playQuestionSound:[item objectForKey:@"sound"]];
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
-    NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    //NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
+    NSLog(@"%f", -1 * [startDate timeIntervalSinceNow]);
+    if (([startDate timeIntervalSinceNow]*-1) > MAX_TIME*60) {
+        [self performSegueWithIdentifier:@"returnScore1" sender:self];
+    }
     [self showNextAnswers];
 }
 
@@ -129,6 +135,13 @@
         [vc setSection:(self.sectionNum+1)];
         [vc setDic:[[NSDictionary alloc] initWithDictionary:dic]];
         [vc setAnswers:answers];
+        [vc setName:[[NSString alloc] initWithString:name]];
+        [vc setLastName:[[NSString alloc] initWithString:lastName]];
+        [vc setMail:[[NSString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
+    } else if ([[segue identifier] isEqualToString:@"returnScore1"]) {
+        ScoreViewController *vc = [segue destinationViewController];
+        [vc setAnswers:[[NSMutableString alloc] initWithString:answers]];
         [vc setName:[[NSString alloc] initWithString:name]];
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];

@@ -23,6 +23,7 @@
 @synthesize dic;
 @synthesize section;
 @synthesize answers;
+@synthesize startDate;
 
 @synthesize name;
 @synthesize lastName;
@@ -39,6 +40,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"%@",[startDate description]);
     [super viewDidLoad];
     if (dic) {
     NSArray *sectionsArray = [[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]];
@@ -73,6 +75,7 @@
         [vc setName:[[NSString alloc] initWithString:name]];
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
     } else if ([[segue identifier] isEqualToString:@"toSectionTwo"]) {
         QuestionsAnswersViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
@@ -82,6 +85,7 @@
         [vc setName:[[NSString alloc] initWithString:name]];
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
     } else if ([[segue identifier] isEqualToString:@"toSectionThree"]) {
         EmptyQuestionViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
@@ -91,6 +95,7 @@
         [vc setName:[[NSString alloc] initWithString:name]];
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
     } else if ([[segue identifier] isEqualToString:@"toSectionFour"]) {
         FinalQuestionsViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
@@ -100,6 +105,7 @@
         [vc setName:[[NSMutableString alloc] initWithString:name]];
         [vc setLastName:[[NSMutableString alloc] initWithString:lastName]];
         [vc setMail:[[NSMutableString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
     } else if ([[segue identifier] isEqualToString:@"toSectionFive"]) {
         FinalQuestionsViewController *vc = [segue destinationViewController];
         [vc setSection:[[NSArray alloc] initWithArray:[dic objectForKey:@"QuestionsAndAnswers"]]];
@@ -109,6 +115,7 @@
         [vc setName:[[NSMutableString alloc] initWithString:name]];
         [vc setLastName:[[NSMutableString alloc] initWithString:lastName]];
         [vc setMail:[[NSMutableString alloc] initWithString:mail]];
+        [vc setStartDate:startDate];
     }
 }
 

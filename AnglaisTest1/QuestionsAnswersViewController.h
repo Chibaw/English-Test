@@ -9,6 +9,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
+#import "Config.h"
 
 @interface QuestionsAnswersViewController : UIViewController
 
@@ -31,4 +32,5 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *lastName;
 @property (nonatomic) NSString *mail;
+@property (nonatomic) NSDate   *startDate;
 @end
