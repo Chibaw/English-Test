@@ -19,6 +19,7 @@
 @synthesize verify;
 @synthesize catSizes;
 @synthesize finalScore;
+@synthesize canQuit;
 
 @synthesize name;
 @synthesize lastName;
@@ -61,9 +62,25 @@
             ++score;
         }
     }
+    canQuit = NO;
     finalScore = ((990*score/[verify length]) - (990*score/[answers length])%5);
-    [scoreBox setText:[NSString stringWithFormat:@"%d", finalScore]];
+    [self saveInPList];
     [self sendServer];
+    [scoreBox setText:[NSString stringWithFormat:@"%d", finalScore]];
+}
+
+- (void)saveInPList
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"questions_and_answers" ofType:@"plist"];
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    NSMutableArray *sectionsArray = [dic objectForKey:@"Results"];
+    NSMutableDictionary *result = [[NSMutableDictionary alloc] init];
+    [result setValue:@"firstName" forKey:name];
+    [result setValue:@"lastName" forKey:lastName];
+    [result setValue:@"email" forKey:mail];
+    [result setValue:@"score" forKey:[NSString stringWithFormat:@"%d", finalScore]];
+    [sectionsArray addObject:result];
+    canQuit = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,7 +95,9 @@
 }
 
 - (IBAction)goodBye:(id)sender {
-    exit(EXIT_SUCCESS);
+    if (canQuit == YES) {
+        exit(EXIT_SUCCESS);
+    }
 }
 
 - (void)sendServer {

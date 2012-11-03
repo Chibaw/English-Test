@@ -22,6 +22,8 @@
 @property (nonatomic, strong) NSMutableString *verify;
 @property (nonatomic, strong) NSMutableArray *catSizes;
 
+@property (nonatomic) BOOL  canQuit;
+
 - (IBAction)goodBye:(id)sender;
 - (void)sendServer;
 @end
