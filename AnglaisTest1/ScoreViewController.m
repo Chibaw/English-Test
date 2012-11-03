@@ -8,6 +8,7 @@
  */
 
 #import "ScoreViewController.h"
+#import "Config.h"
 //#import "SKPSMTPMessage.h"
 @interface ScoreViewController ()
 
@@ -101,8 +102,8 @@
 }
 
 - (void)sendServer {
-    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:@"http://vks16004.ip-176-31-165.eu/toeic_result.php?"];
-    [finalUrl appendString:@"name="];
+    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:PHP_SCRIPT_LOCATION];
+    [finalUrl appendString:@"?name="];
     [finalUrl appendString:name];
     [finalUrl appendString:@"&lastName="];
     [finalUrl appendString:lastName];

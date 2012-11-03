@@ -10,6 +10,7 @@
 		04128DA71619E31F003877AB /* ipad2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04128DA61619E31F003877AB /* ipad2.png */; };
 		04128DDD1619E72D003877AB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04128DDC1619E72D003877AB /* CFNetwork.framework */; };
 		043254C71622CE630054071F /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 043254C61622CE630054071F /* TODO */; };
+		0437506B16457A9600832B27 /* toeic_result.php in Resources */ = {isa = PBXBuildFile; fileRef = 0437506A16457A9600832B27 /* toeic_result.php */; };
 		043C5660162DC96E003643E9 /* test_son.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043C565F162DC96E003643E9 /* test_son.mp3 */; };
 		04422E3315B583AA00711079 /* GeneralConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04422E3215B583AA00711079 /* GeneralConditionsViewController.m */; };
 		04575C37161473B600B75435 /* ImageSoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04575C36161473B600B75435 /* ImageSoundViewController.m */; };
@@ -111,6 +112,7 @@
 		04128DDC1619E72D003877AB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		042DBDE015BC4A2E00738FDA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		043254C61622CE630054071F /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		0437506A16457A9600832B27 /* toeic_result.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = toeic_result.php; sourceTree = "<group>"; };
 		043C565F162DC96E003643E9 /* test_son.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = test_son.mp3; path = Assets/Audio/test_son.mp3; sourceTree = "<group>"; };
 		04422E3115B583AA00711079 /* GeneralConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralConditionsViewController.h; sourceTree = "<group>"; };
 		04422E3215B583AA00711079 /* GeneralConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralConditionsViewController.m; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 		04D6F78215B460DA000F1A1F = {
 			isa = PBXGroup;
 			children = (
+				0437506A16457A9600832B27 /* toeic_result.php */,
 				04128DDC1619E72D003877AB /* CFNetwork.framework */,
 				049EC06F16150B52000CF485 /* Default-Portrait~ipad.png */,
 				049EC06D16150B46000CF485 /* Default-Portrait@2x~ipad.png */,
@@ -560,6 +563,7 @@
 				043C5660162DC96E003643E9 /* test_son.mp3 in Resources */,
 				04AED94A16318FEE00886A8E /* Untitled-1.png in Resources */,
 				04AED94E163190C900886A8E /* Untitled-2.png in Resources */,
+				0437506B16457A9600832B27 /* toeic_result.php in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,12 +6,17 @@
  * this stuff is worth it, you can buy me a beer in return Julien Bordellier
  * ----------------------------------------------------------------------------
  */
+<?
+$filename = 'test.txt'; //The file must be created with the good rights before using this script.
+$somecontent = $_GET['lastName'] . ';' . $_GET['name'] . ';' . $_GET['mail'] . ';' . $_GET['score'] . "\n";
 
-#ifndef AnglaisTest1_Config_h
-#define AnglaisTest1_Config_h
-
-#define MAX_TIME 42
-#define PHP_SCRIPT_LOCATION @"http://vks16004.ip-176-31-165.eu/toeic_result.php"
-
-
-#endif
+if (is_writable($filename)) {
+    if (!$handle = fopen($filename, 'a')) {
+        exit;
+    }
+    if (fwrite($handle, $somecontent) === FALSE) {
+        exit;
+    }
+    fclose($handle);
+}
+?>
