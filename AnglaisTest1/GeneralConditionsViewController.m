@@ -9,6 +9,7 @@
 
 #import "GeneralConditionsViewController.h"
 #import "QuestionsAnswersInfoViewController.h"
+#import "Config.h"
 
 @interface GeneralConditionsViewController ()
 
@@ -34,11 +35,26 @@
 - (void)viewDidLoad
 {
     NSString        *path = [[NSBundle mainBundle]
-                             pathForResource:@"test_son.mp3" ofType:nil];
+                             pathForResource:@"test_son.m4a" ofType:nil];
     NSURL           *url = [[NSURL alloc] initFileURLWithPath:path];
     player = [[AVAudioPlayer alloc]
               initWithContentsOfURL:url error:nil];
     [player prepareToPlay];
+    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:INIT_SCRIPT_LOCATION];
+    [finalUrl appendString:@"?name="];
+    [finalUrl appendString:name];
+    [finalUrl appendString:@"&lastName="];
+    [finalUrl appendString:lastName];
+    [finalUrl appendString:@"&mail="];
+    [finalUrl appendString:mail];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:finalUrl]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                                       timeoutInterval:10];
+    
+    [request setHTTPMethod: @"GET"];
+    NSError *requestError;
+    NSURLResponse *urlResponse = nil;
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

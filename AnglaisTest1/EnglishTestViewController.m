@@ -68,6 +68,13 @@
         && [self NSStringIsValidEmail:self.textFieldMail.text]) {
       return TRUE;
     }
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle: @"Attention"
+                          message: @"Veuillez rentrer des informations valides."
+                          delegate: nil
+                          cancelButtonTitle:@"Ok"
+                          otherButtonTitles:nil];
+    [alert show];
     return FALSE;
 }
 
@@ -103,7 +110,6 @@
 }
 
 - (IBAction)buttonStart:(id)sender {
-    
     if ([self ValidationSuccessful] == YES) {
         if ([self isAdminInUserDatabase]) {
             [self performSegueWithIdentifier:@"ValidationSucceededAdmin" sender:self];            

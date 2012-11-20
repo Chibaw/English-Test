@@ -49,6 +49,7 @@
             [verify appendString:[lol valueForKey:@"answer"]];
         }
     }
+    NSLog(@"verify = %@", verify);
 }
 
 - (void)viewDidLoad
@@ -57,6 +58,7 @@
     [self getSectionsSizes];
     const char *yay = [answers UTF8String];
     const char *yayVerified = [verify UTF8String];
+    //yay = "BACAAAABCABACCABACACACABADBCCBBDDDABCBADAAACBABBAB@BABDADC";
     int score = 0;
     for (int i = 0; i < [answers length]; ++i) {
         if (yay[i] == yayVerified[i]) {
@@ -65,6 +67,7 @@
     }
     canQuit = NO;
     finalScore = ((990*score/[verify length]) - (990*score/[answers length])%5);
+    NSLog(@"%d\n", finalScore);
     [self saveInPList];
     [self sendServer];
     [scoreBox setText:[NSString stringWithFormat:@"%d", finalScore]];
@@ -102,7 +105,7 @@
 }
 
 - (void)sendServer {
-    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:PHP_SCRIPT_LOCATION];
+    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:RESULT_SCRIPT_LOCATION];
     [finalUrl appendString:@"?name="];
     [finalUrl appendString:name];
     [finalUrl appendString:@"&lastName="];

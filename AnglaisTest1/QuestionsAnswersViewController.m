@@ -96,6 +96,7 @@
 
 - (IBAction)nextQuestion:(id)sender {
     [answers appendFormat:@"%c", 'A' + [selectAnswer selectedSegmentIndex]];
+    [self sendServer:'A' + [selectAnswer selectedSegmentIndex]];
     //NSLog(@"%c %@", 'A' + [selectAnswer selectedSegmentIndex], answers);
     if (([startDate timeIntervalSinceNow]*-1) > MAX_TIME*60) {
         [self performSegueWithIdentifier:@"returnScore2" sender:self];
@@ -127,5 +128,19 @@
         [vc setLastName:[[NSString alloc] initWithString:lastName]];
         [vc setMail:[[NSString alloc] initWithString:mail]];
     }
+}
+
+- (void)sendServer:(char)rep {
+    NSMutableString *finalUrl = [[NSMutableString alloc] initWithString:FOLLOW_SCRIPT_LOCATION];
+    [finalUrl appendString:@"?rep="];
+    [finalUrl appendFormat:@"%c", rep];
+    NSLog(@"%c", rep);
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:finalUrl]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                                       timeoutInterval:10];
+    [request setHTTPMethod: @"GET"];
+    NSError *requestError;
+    NSURLResponse *urlResponse = nil;
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
 }
 @end
